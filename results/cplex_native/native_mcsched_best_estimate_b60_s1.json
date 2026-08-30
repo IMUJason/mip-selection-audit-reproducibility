@@ -1,0 +1,1 @@
+{"instance_name": "mcsched", "instance_file": "mcsched.mps.gz", "budget": 60.0, "seed": 1, "nodeselect": 3, "strategy": "best_estimate", "status": "time limit exceeded", "has_solution": true, "incumbent_native": 212797.0, "incumbent_standardized": 212797.0, "wall_seconds": 60.0}

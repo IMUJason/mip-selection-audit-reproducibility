@@ -1,0 +1,1 @@
+{"instance_name": "rail02", "instance_file": "rail02.mps.gz", "budget": 900.0, "seed": 2, "nodeselect": 1, "strategy": "depth_first", "status": "time limit exceeded", "has_solution": true, "incumbent_native": -74.89997766666669, "incumbent_standardized": -74.89997766666669, "wall_seconds": 900.13}

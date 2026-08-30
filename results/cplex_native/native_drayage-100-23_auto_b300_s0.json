@@ -1,0 +1,1 @@
+{"instance_name": "drayage-100-23", "instance_file": "drayage-100-23.mps.gz", "budget": 300.0, "seed": 0, "nodeselect": 0, "strategy": "auto", "status": "integer optimal solution", "has_solution": true, "incumbent_native": 103333.87407302856, "incumbent_standardized": 103333.87407302856, "wall_seconds": 0.1}

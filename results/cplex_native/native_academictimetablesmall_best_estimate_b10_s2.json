@@ -1,0 +1,1 @@
+{"instance_name": "academictimetablesmall", "instance_file": "academictimetablesmall.mps.gz", "budget": 10.0, "seed": 2, "nodeselect": 3, "strategy": "best_estimate", "status": "time limit exceeded, no integer solution", "has_solution": false, "incumbent_native": null, "incumbent_standardized": null, "wall_seconds": 10.06}

@@ -1,0 +1,1 @@
+{"instance_name": "savsched1", "instance_file": "savsched1.mps.gz", "budget": 300.0, "seed": 1, "nodeselect": 1, "strategy": "depth_first", "status": "time limit exceeded", "has_solution": true, "incumbent_native": 5000.499999999967, "incumbent_standardized": 5000.499999999967, "wall_seconds": 300.33}

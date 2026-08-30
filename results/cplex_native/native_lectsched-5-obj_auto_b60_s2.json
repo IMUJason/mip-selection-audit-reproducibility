@@ -1,0 +1,1 @@
+{"instance_name": "lectsched-5-obj", "instance_file": "lectsched-5-obj.mps.gz", "budget": 60.0, "seed": 2, "nodeselect": 0, "strategy": "auto", "status": "time limit exceeded", "has_solution": true, "incumbent_native": 28.0, "incumbent_standardized": 28.0, "wall_seconds": 60.03}

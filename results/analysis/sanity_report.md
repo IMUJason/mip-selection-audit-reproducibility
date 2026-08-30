@@ -1,0 +1,243 @@
+# Grid sanity report
+
+- grid runs: 2475
+- native runs: 768
+- invariant violations: 237
+
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_bound/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_bound/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_bound/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_bound/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_estimate/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_estimate/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_estimate/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/best_estimate/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/depth_first/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/depth_first/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/depth_first/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/depth_first/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/greedy_score/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/greedy_score/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/greedy_score/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/greedy_score/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/hybrid_best_bound_depth/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/hybrid_best_bound_depth/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/hybrid_best_bound_depth/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE academictimetablesmall/hybrid_best_bound_depth/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE air05/greedy_score/b300: incumbents=[26675.0, 26736.0] statuses={'node_limit'} missing=False
+- I5b COVERAGE-VARIANCE atlanta-ip/best_bound/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/best_bound/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/best_bound/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/best_bound/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/best_estimate/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/best_estimate/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/best_estimate/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/best_estimate/b900: incumbents=[] statuses={'node_limit', 'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/depth_first/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/depth_first/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/depth_first/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/depth_first/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/greedy_score/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/greedy_score/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/greedy_score/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/greedy_score/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/hybrid_best_bound_depth/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/hybrid_best_bound_depth/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/hybrid_best_bound_depth/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE atlanta-ip/hybrid_best_bound_depth/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_bound/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_bound/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_bound/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_bound/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_estimate/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_estimate/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_estimate/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/best_estimate/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/depth_first/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/depth_first/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/depth_first/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/depth_first/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/greedy_score/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/greedy_score/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/greedy_score/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/greedy_score/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/hybrid_best_bound_depth/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/hybrid_best_bound_depth/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/hybrid_best_bound_depth/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched007/hybrid_best_bound_depth/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/best_bound/b10: incumbents=[184.0, 188.0] statuses={'time_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/best_bound/b300: incumbents=[182.0, 188.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/best_bound/b60: incumbents=[184.0, 188.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/best_bound/b900: incumbents=[182.0, 188.0] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched008/best_estimate/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/best_estimate/b300: incumbents=[186.0, 190.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/best_estimate/b60: incumbents=[186.0, 190.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/best_estimate/b900: incumbents=[186.0, 190.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/depth_first/b10: incumbents=[182.0, 185.0] statuses={'time_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/depth_first/b300: incumbents=[182.0, 185.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/depth_first/b60: incumbents=[182.0, 185.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/depth_first/b900: incumbents=[182.0, 185.0] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched008/greedy_score/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/greedy_score/b300: incumbents=[186.0, 189.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/greedy_score/b60: incumbents=[186.0, 189.0] statuses={'node_limit'} missing=True
+- I5a VALUE-VARIANCE csched008/greedy_score/b900: incumbents=[186.0, 189.0] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched008/hybrid_best_bound_depth/b10: incumbents=[182.0] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched008/hybrid_best_bound_depth/b300: incumbents=[182.0] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched008/hybrid_best_bound_depth/b60: incumbents=[182.0] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE csched008/hybrid_best_bound_depth/b900: incumbents=[182.0] statuses={'node_limit'} missing=True
+- I6 STOCHASTIC-IDENTICAL-BUT-NODES-DIFFER drayage-100-23/boltzmann_adaptive/b10
+- I6 STOCHASTIC-IDENTICAL-BUT-NODES-DIFFER drayage-100-23/random_uniform/b10
+- I5a VALUE-VARIANCE drayage-25-23/best_bound/b10: incumbents=[106481.561222, 106589.817867] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/best_bound/b300: incumbents=[102111.589909, 105844.788837, 106397.131062] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/best_bound/b60: incumbents=[104504.389286, 105844.788837, 106397.131062] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/best_bound/b900: incumbents=[102111.589909, 105578.046913, 105844.788837] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/best_estimate/b10: incumbents=[106481.561222, 106589.817867] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/best_estimate/b300: incumbents=[102111.589909, 104674.273624, 106397.131062] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/best_estimate/b60: incumbents=[102111.589909, 106397.131062, 106589.817867] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/best_estimate/b900: incumbents=[102111.589909, 105578.046913, 106589.817867] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/greedy_score/b10: incumbents=[105714.246025, 106589.817867] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/greedy_score/b300: incumbents=[104907.589302, 105652.618332, 106129.873466] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/greedy_score/b60: incumbents=[104907.589302, 106471.70248] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/greedy_score/b900: incumbents=[104907.589302, 105652.618332, 106129.873466] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/hybrid_best_bound_depth/b300: incumbents=[102111.589909, 105578.046913, 105844.788837] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/hybrid_best_bound_depth/b60: incumbents=[104504.389286, 105714.246025, 105844.788837] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE drayage-25-23/hybrid_best_bound_depth/b900: incumbents=[102111.589909, 105578.046913, 105844.788837] statuses={'node_limit'} missing=False
+- I5b COVERAGE-VARIANCE germanrr/best_bound/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/best_bound/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/best_bound/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/best_bound/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/best_estimate/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/best_estimate/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/best_estimate/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/best_estimate/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/depth_first/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/depth_first/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/depth_first/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/depth_first/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/greedy_score/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/greedy_score/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/greedy_score/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/greedy_score/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/hybrid_best_bound_depth/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/hybrid_best_bound_depth/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/hybrid_best_bound_depth/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE germanrr/hybrid_best_bound_depth/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_bound/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_bound/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_bound/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_bound/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_estimate/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_estimate/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_estimate/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/best_estimate/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/depth_first/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/depth_first/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/depth_first/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/depth_first/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/greedy_score/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/greedy_score/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/greedy_score/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/greedy_score/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/hybrid_best_bound_depth/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/hybrid_best_bound_depth/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/hybrid_best_bound_depth/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE gfd-schedulen180f7d50m30k18/hybrid_best_bound_depth/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_bound/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_bound/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_bound/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_bound/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_estimate/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_estimate/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_estimate/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/best_estimate/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/depth_first/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/depth_first/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/depth_first/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/depth_first/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/greedy_score/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/greedy_score/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/greedy_score/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/greedy_score/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/hybrid_best_bound_depth/b10: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/hybrid_best_bound_depth/b300: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/hybrid_best_bound_depth/b60: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE lectsched-5-obj/hybrid_best_bound_depth/b900: incumbents=[] statuses={'node_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_bound/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_bound/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_bound/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_bound/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_estimate/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_estimate/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_estimate/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/best_estimate/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/depth_first/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail01/depth_first/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/depth_first/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/depth_first/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/greedy_score/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail01/greedy_score/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/greedy_score/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/greedy_score/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/hybrid_best_bound_depth/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail01/hybrid_best_bound_depth/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/hybrid_best_bound_depth/b60: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail01/hybrid_best_bound_depth/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_bound/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_bound/b300: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_bound/b60: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_bound/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_estimate/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_estimate/b300: incumbents=[] statuses={'solver_status_108', 'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_estimate/b60: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/best_estimate/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail02/depth_first/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/depth_first/b300: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/depth_first/b60: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/depth_first/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail02/greedy_score/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/greedy_score/b300: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/greedy_score/b60: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/greedy_score/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE rail02/hybrid_best_bound_depth/b10: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/hybrid_best_bound_depth/b300: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/hybrid_best_bound_depth/b60: incumbents=[] statuses={'solver_status_108'} missing=True
+- I5b COVERAGE-VARIANCE rail02/hybrid_best_bound_depth/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5a VALUE-VARIANCE rail507/best_bound/b10: incumbents=[742.0, 749.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/best_bound/b300: incumbents=[175.0, 176.0, 177.0] statuses={'node_limit', 'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/best_bound/b60: incumbents=[679.0, 689.0, 704.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/best_bound/b900: incumbents=[175.0, 176.0, 177.0] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/best_estimate/b300: incumbents=[718.0, 722.0, 726.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/best_estimate/b60: incumbents=[738.0, 740.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/best_estimate/b900: incumbents=[697.0, 709.0, 714.0] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/depth_first/b10: incumbents=[746.0, 749.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/depth_first/b300: incumbents=[175.0, 176.0, 177.0] statuses={'node_limit', 'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/depth_first/b60: incumbents=[679.0, 689.0, 704.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/depth_first/b900: incumbents=[175.0, 176.0, 177.0] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/greedy_score/b10: incumbents=[746.0, 749.0, 750.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/greedy_score/b300: incumbents=[719.0, 724.0, 729.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/greedy_score/b60: incumbents=[738.0, 740.0, 741.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/greedy_score/b900: incumbents=[711.0, 718.0, 720.0] statuses={'node_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/hybrid_best_bound_depth/b10: incumbents=[742.0, 749.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/hybrid_best_bound_depth/b300: incumbents=[175.0, 176.0, 177.0] statuses={'node_limit', 'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/hybrid_best_bound_depth/b60: incumbents=[679.0, 689.0, 704.0] statuses={'time_limit'} missing=False
+- I5a VALUE-VARIANCE rail507/hybrid_best_bound_depth/b900: incumbents=[175.0, 176.0, 177.0] statuses={'node_limit'} missing=False
+- I5b COVERAGE-VARIANCE savsched1/best_bound/b10: incumbents=[] statuses={'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/best_bound/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/best_bound/b60: incumbents=[] statuses={'time_limit', 'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/best_bound/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/best_estimate/b10: incumbents=[] statuses={'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/best_estimate/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/best_estimate/b60: incumbents=[] statuses={'time_limit', 'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/best_estimate/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/depth_first/b10: incumbents=[] statuses={'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/depth_first/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/depth_first/b60: incumbents=[] statuses={'time_limit', 'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/depth_first/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/greedy_score/b10: incumbents=[] statuses={'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/greedy_score/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/greedy_score/b60: incumbents=[] statuses={'time_limit', 'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/greedy_score/b900: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/hybrid_best_bound_depth/b10: incumbents=[] statuses={'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/hybrid_best_bound_depth/b300: incumbents=[] statuses={'time_limit'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/hybrid_best_bound_depth/b60: incumbents=[] statuses={'time_limit', 'solver_status_107'} missing=True
+- I5b COVERAGE-VARIANCE savsched1/hybrid_best_bound_depth/b900: incumbents=[] statuses={'time_limit'} missing=True

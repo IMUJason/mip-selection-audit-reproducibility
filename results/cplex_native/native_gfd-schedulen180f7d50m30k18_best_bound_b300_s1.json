@@ -1,0 +1,1 @@
+{"instance_name": "gfd-schedulen180f7d50m30k18", "instance_file": "gfd-schedulen180f7d50m30k18.mps.gz", "budget": 300.0, "seed": 1, "nodeselect": 2, "strategy": "best_bound", "status": "time limit exceeded, no integer solution", "has_solution": false, "incumbent_native": null, "incumbent_standardized": null, "wall_seconds": 300.33}

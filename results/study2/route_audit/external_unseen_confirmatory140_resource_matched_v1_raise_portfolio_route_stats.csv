@@ -1,0 +1,5 @@
+portfolio_routed_mode,portfolio_route_reason,count,win,loss,tie,unpaired
+raise_cut,default_raise_cut,82,0,0,63,19
+raise_cut,no_probe_summary_abstain_to_raise_cut,40,0,0,9,31
+scip_ensemble,large_pool_ultra_low_obj_parallelism,15,0,2,1,12
+plan5_adaptive,high_dominance_clique,3,1,0,0,2

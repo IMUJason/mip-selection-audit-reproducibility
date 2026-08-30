@@ -1,0 +1,1 @@
+{"instance_name": "csched008", "instance_file": "csched008.mps.gz", "budget": 10.0, "seed": 1, "nodeselect": 2, "strategy": "best_bound", "status": "time limit exceeded", "has_solution": true, "incumbent_native": 180.0, "incumbent_standardized": 180.0, "wall_seconds": 10.01}

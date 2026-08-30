@@ -1,0 +1,1 @@
+{"instance_name": "germanrr", "instance_file": "germanrr.mps.gz", "budget": 300.0, "seed": 1, "nodeselect": 2, "strategy": "best_bound", "status": "time limit exceeded", "has_solution": true, "incumbent_native": 47095869.64940002, "incumbent_standardized": 47095869.64940002, "wall_seconds": 300.03}

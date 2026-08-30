@@ -1,0 +1,1 @@
+{"instance_name": "mcsched", "instance_file": "mcsched.mps.gz", "budget": 900.0, "seed": 0, "nodeselect": 0, "strategy": "auto", "status": "integer optimal, tolerance", "has_solution": true, "incumbent_native": 211913.0, "incumbent_standardized": 211913.0, "wall_seconds": 81.84}

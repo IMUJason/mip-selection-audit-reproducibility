@@ -13,6 +13,7 @@ Outputs (results/analysis/):
   anchor_split.csv     per instance x budget: bound-driven vs exploration split
 """
 from __future__ import annotations
+import os
 
 import json
 import re
@@ -23,7 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TRACES = ROOT / "results" / "grid" / "logs" / "runs"
 ANALYSIS = ROOT / "results" / "analysis"
-SOLU = Path("/Users/cjx-ms/Documents/我的坚果云/科研/论文/MIPLIB 2017 Dataset/miplib2017-v36.solu")
+SOLU = Path(os.environ.get("MIPLIB_SOLU", ROOT / "data" / "miplib2017-v36.solu"))
 
 BOUND_DRIVEN = {"best_bound", "depth_first", "hybrid_best_bound_depth"}
 NEAR_ZERO = {"academictimetablesmall"}

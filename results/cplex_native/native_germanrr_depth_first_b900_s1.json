@@ -1,0 +1,1 @@
+{"instance_name": "germanrr", "instance_file": "germanrr.mps.gz", "budget": 900.0, "seed": 1, "nodeselect": 1, "strategy": "depth_first", "status": "integer optimal, tolerance", "has_solution": true, "incumbent_native": 47095869.649399936, "incumbent_standardized": 47095869.649399936, "wall_seconds": 442.2}

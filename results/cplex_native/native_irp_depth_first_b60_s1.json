@@ -1,0 +1,1 @@
+{"instance_name": "irp", "instance_file": "irp.mps.gz", "budget": 60.0, "seed": 1, "nodeselect": 1, "strategy": "depth_first", "status": "integer optimal, tolerance", "has_solution": true, "incumbent_native": 12159.502873999998, "incumbent_standardized": 12159.502873999998, "wall_seconds": 1.28}

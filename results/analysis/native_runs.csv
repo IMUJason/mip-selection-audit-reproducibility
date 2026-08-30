@@ -1,0 +1,769 @@
+instance_name,strategy,budget,seed,status,has_solution,incumbent_standardized,optimum,gap_vs_opt,wall_seconds
+academictimetablesmall,auto,10.0,0,"time limit exceeded, no integer solution",False,,0.0,,10.07
+academictimetablesmall,auto,10.0,1,"time limit exceeded, no integer solution",False,,0.0,,10.07
+academictimetablesmall,auto,10.0,2,"time limit exceeded, no integer solution",False,,0.0,,10.06
+academictimetablesmall,auto,300.0,0,"time limit exceeded, no integer solution",False,,0.0,,300.07
+academictimetablesmall,auto,300.0,1,time limit exceeded,True,442.0,0.0,442.0,300.15
+academictimetablesmall,auto,300.0,2,time limit exceeded,True,235.0,0.0,235.0,300.07
+academictimetablesmall,auto,60.0,0,"time limit exceeded, no integer solution",False,,0.0,,60.07
+academictimetablesmall,auto,60.0,1,"time limit exceeded, no integer solution",False,,0.0,,60.06
+academictimetablesmall,auto,60.0,2,"time limit exceeded, no integer solution",False,,0.0,,60.07
+academictimetablesmall,auto,900.0,0,time limit exceeded,True,245.0,0.0,245.0,900.08
+academictimetablesmall,auto,900.0,1,time limit exceeded,True,8.0,0.0,8.0,900.03
+academictimetablesmall,auto,900.0,2,time limit exceeded,True,222.0,0.0,222.0,900.06
+academictimetablesmall,best_bound,10.0,0,"time limit exceeded, no integer solution",False,,0.0,,10.07
+academictimetablesmall,best_bound,10.0,1,"time limit exceeded, no integer solution",False,,0.0,,10.07
+academictimetablesmall,best_bound,10.0,2,"time limit exceeded, no integer solution",False,,0.0,,10.08
+academictimetablesmall,best_bound,300.0,0,time limit exceeded,True,255.0,0.0,255.0,300.07
+academictimetablesmall,best_bound,300.0,1,time limit exceeded,True,15.0,0.0,15.0,300.16
+academictimetablesmall,best_bound,300.0,2,time limit exceeded,True,243.0,0.0,243.0,300.08
+academictimetablesmall,best_bound,60.0,0,"time limit exceeded, no integer solution",False,,0.0,,60.08
+academictimetablesmall,best_bound,60.0,1,"time limit exceeded, no integer solution",False,,0.0,,60.07
+academictimetablesmall,best_bound,60.0,2,"time limit exceeded, no integer solution",False,,0.0,,60.07
+academictimetablesmall,best_bound,900.0,0,time limit exceeded,True,213.0,0.0,213.0,900.08
+academictimetablesmall,best_bound,900.0,1,time limit exceeded,True,14.0,0.0,14.0,900.04
+academictimetablesmall,best_bound,900.0,2,time limit exceeded,True,237.0,0.0,237.0,900.07
+academictimetablesmall,best_estimate,10.0,0,"time limit exceeded, no integer solution",False,,0.0,,10.07
+academictimetablesmall,best_estimate,10.0,1,"time limit exceeded, no integer solution",False,,0.0,,10.08
+academictimetablesmall,best_estimate,10.0,2,"time limit exceeded, no integer solution",False,,0.0,,10.06
+academictimetablesmall,best_estimate,300.0,0,time limit exceeded,True,633.0,0.0,633.0,300.07
+academictimetablesmall,best_estimate,300.0,1,time limit exceeded,True,1847.0,0.0,1847.0,300.16
+academictimetablesmall,best_estimate,300.0,2,time limit exceeded,True,631.0,0.0,631.0,300.06
+academictimetablesmall,best_estimate,60.0,0,"time limit exceeded, no integer solution",False,,0.0,,60.06
+academictimetablesmall,best_estimate,60.0,1,"time limit exceeded, no integer solution",False,,0.0,,60.06
+academictimetablesmall,best_estimate,60.0,2,"time limit exceeded, no integer solution",False,,0.0,,60.06
+academictimetablesmall,best_estimate,900.0,0,time limit exceeded,True,633.0,0.0,633.0,900.08
+academictimetablesmall,best_estimate,900.0,1,time limit exceeded,True,260.0,0.0,260.0,900.04
+academictimetablesmall,best_estimate,900.0,2,time limit exceeded,True,217.0,0.0,217.0,900.07
+academictimetablesmall,depth_first,10.0,0,"time limit exceeded, no integer solution",False,,0.0,,10.07
+academictimetablesmall,depth_first,10.0,1,"time limit exceeded, no integer solution",False,,0.0,,10.08
+academictimetablesmall,depth_first,10.0,2,"time limit exceeded, no integer solution",False,,0.0,,10.08
+academictimetablesmall,depth_first,300.0,0,"time limit exceeded, no integer solution",False,,0.0,,300.06
+academictimetablesmall,depth_first,300.0,1,time limit exceeded,True,67.0,0.0,67.0,300.16
+academictimetablesmall,depth_first,300.0,2,"time limit exceeded, no integer solution",False,,0.0,,300.08
+academictimetablesmall,depth_first,60.0,0,"time limit exceeded, no integer solution",False,,0.0,,60.06
+academictimetablesmall,depth_first,60.0,1,"time limit exceeded, no integer solution",False,,0.0,,60.05
+academictimetablesmall,depth_first,60.0,2,"time limit exceeded, no integer solution",False,,0.0,,60.07
+academictimetablesmall,depth_first,900.0,0,time limit exceeded,True,2053.0,0.0,2053.0,900.07
+academictimetablesmall,depth_first,900.0,1,time limit exceeded,True,44.0,0.0,44.0,900.03
+academictimetablesmall,depth_first,900.0,2,time limit exceeded,True,24.0,0.0,24.0,900.07
+air05,auto,10.0,0,time limit exceeded,True,26526.0,26374.0,0.005763251687267764,10.01
+air05,auto,10.0,1,time limit exceeded,True,26374.0,26374.0,0.0,10.01
+air05,auto,10.0,2,integer optimal solution,True,26374.0,26374.0,0.0,7.59
+air05,auto,300.0,0,integer optimal solution,True,26374.0,26374.0,0.0,14.1
+air05,auto,300.0,1,integer optimal solution,True,26374.0,26374.0,0.0,10.6
+air05,auto,300.0,2,integer optimal solution,True,26374.0,26374.0,0.0,7.87
+air05,auto,60.0,0,integer optimal solution,True,26374.0,26374.0,0.0,14.02
+air05,auto,60.0,1,integer optimal solution,True,26374.0,26374.0,0.0,10.6
+air05,auto,60.0,2,integer optimal solution,True,26374.0,26374.0,0.0,7.59
+air05,auto,900.0,0,integer optimal solution,True,26374.0,26374.0,0.0,14.43
+air05,auto,900.0,1,integer optimal solution,True,26374.0,26374.0,0.0,10.8
+air05,auto,900.0,2,integer optimal solution,True,26374.0,26374.0,0.0,7.63
+air05,best_bound,10.0,0,"integer optimal, tolerance",True,26374.0,26374.0,0.0,8.3
+air05,best_bound,10.0,1,time limit exceeded,True,26527.0,26374.0,0.005801167816789262,10.01
+air05,best_bound,10.0,2,time limit exceeded,True,26374.000000000004,26374.0,1.379380756461558e-16,10.01
+air05,best_bound,300.0,0,"integer optimal, tolerance",True,26374.0,26374.0,0.0,8.32
+air05,best_bound,300.0,1,integer optimal solution,True,26374.0,26374.0,0.0,12.19
+air05,best_bound,300.0,2,integer optimal solution,True,26374.000000000004,26374.0,1.379380756461558e-16,10.86
+air05,best_bound,60.0,0,"integer optimal, tolerance",True,26374.0,26374.0,0.0,8.31
+air05,best_bound,60.0,1,integer optimal solution,True,26374.0,26374.0,0.0,12.01
+air05,best_bound,60.0,2,integer optimal solution,True,26374.000000000004,26374.0,1.379380756461558e-16,10.57
+air05,best_bound,900.0,0,"integer optimal, tolerance",True,26374.0,26374.0,0.0,8.53
+air05,best_bound,900.0,1,integer optimal solution,True,26374.0,26374.0,0.0,12.14
+air05,best_bound,900.0,2,integer optimal solution,True,26374.000000000004,26374.0,1.379380756461558e-16,10.51
+air05,best_estimate,10.0,0,integer optimal solution,True,26374.0,26374.0,0.0,9.58
+air05,best_estimate,10.0,1,integer optimal solution,True,26374.0,26374.0,0.0,7.71
+air05,best_estimate,10.0,2,integer optimal solution,True,26374.0,26374.0,0.0,9.94
+air05,best_estimate,300.0,0,integer optimal solution,True,26374.0,26374.0,0.0,9.67
+air05,best_estimate,300.0,1,integer optimal solution,True,26374.0,26374.0,0.0,7.72
+air05,best_estimate,300.0,2,integer optimal solution,True,26374.0,26374.0,0.0,10.21
+air05,best_estimate,60.0,0,integer optimal solution,True,26374.0,26374.0,0.0,9.62
+air05,best_estimate,60.0,1,integer optimal solution,True,26374.0,26374.0,0.0,7.68
+air05,best_estimate,60.0,2,integer optimal solution,True,26374.0,26374.0,0.0,9.88
+air05,best_estimate,900.0,0,integer optimal solution,True,26374.0,26374.0,0.0,9.9
+air05,best_estimate,900.0,1,integer optimal solution,True,26374.0,26374.0,0.0,7.77
+air05,best_estimate,900.0,2,integer optimal solution,True,26374.0,26374.0,0.0,9.9
+air05,depth_first,10.0,0,integer optimal solution,True,26374.0,26374.0,0.0,9.86
+air05,depth_first,10.0,1,integer optimal solution,True,26374.0,26374.0,0.0,8.36
+air05,depth_first,10.0,2,"integer optimal, tolerance",True,26374.0,26374.0,0.0,7.48
+air05,depth_first,300.0,0,integer optimal solution,True,26374.0,26374.0,0.0,9.94
+air05,depth_first,300.0,1,integer optimal solution,True,26374.0,26374.0,0.0,8.33
+air05,depth_first,300.0,2,"integer optimal, tolerance",True,26374.0,26374.0,0.0,7.7
+air05,depth_first,60.0,0,integer optimal solution,True,26374.0,26374.0,0.0,9.86
+air05,depth_first,60.0,1,integer optimal solution,True,26374.0,26374.0,0.0,8.31
+air05,depth_first,60.0,2,"integer optimal, tolerance",True,26374.0,26374.0,0.0,7.5
+air05,depth_first,900.0,0,integer optimal solution,True,26374.0,26374.0,0.0,10.21
+air05,depth_first,900.0,1,integer optimal solution,True,26374.0,26374.0,0.0,8.51
+air05,depth_first,900.0,2,"integer optimal, tolerance",True,26374.0,26374.0,0.0,7.48
+atlanta-ip,auto,10.0,0,"time limit exceeded, no integer solution",False,,90.009878614,,10.11
+atlanta-ip,auto,10.0,1,time limit exceeded,True,108.01032456480976,90.009878614,0.1999830043989194,10.04
+atlanta-ip,auto,10.0,2,time limit exceeded,True,105.01040367440979,90.009878614,0.16665420830904915,10.04
+atlanta-ip,auto,300.0,0,time limit exceeded,True,93.0097858411898,90.009878614,0.03332864429308533,300.04
+atlanta-ip,auto,300.0,1,time limit exceeded,True,93.00997187677984,90.009878614,0.033330711128336216,300.1
+atlanta-ip,auto,300.0,2,time limit exceeded,True,91.01004945731984,90.009878614,0.01111178971376005,300.04
+atlanta-ip,auto,60.0,0,time limit exceeded,True,93.0098083095498,90.009878614,0.03332889391413078,60.04
+atlanta-ip,auto,60.0,1,time limit exceeded,True,94.00994413174985,90.009878614,0.0444402945470441,60.04
+atlanta-ip,auto,60.0,2,time limit exceeded,True,95.01021987861978,90.009878614,0.055553249727880775,60.04
+atlanta-ip,auto,900.0,0,time limit exceeded,True,91.00997589489984,90.009878614,0.011110972443243395,899.99
+atlanta-ip,auto,900.0,1,time limit exceeded,True,91.00997516922985,90.009878614,0.011110964381128404,900.03
+atlanta-ip,auto,900.0,2,time limit exceeded,True,91.00981808208984,90.009878614,0.01110921916002124,900.04
+atlanta-ip,best_bound,10.0,0,"time limit exceeded, no integer solution",False,,90.009878614,,10.04
+atlanta-ip,best_bound,10.0,1,time limit exceeded,True,108.01032456480976,90.009878614,0.1999830043989194,10.04
+atlanta-ip,best_bound,10.0,2,time limit exceeded,True,105.01040367440979,90.009878614,0.16665420830904915,10.04
+atlanta-ip,best_bound,300.0,0,time limit exceeded,True,94.00979895374977,90.009878614,0.044438681635191345,300.04
+atlanta-ip,best_bound,300.0,1,time limit exceeded,True,93.00985161437984,90.009878614,0.03332937502610105,300.1
+atlanta-ip,best_bound,300.0,2,time limit exceeded,True,92.00980373026978,90.009878614,0.022218951375840578,300.04
+atlanta-ip,best_bound,60.0,0,time limit exceeded,True,95.00962197918984,90.009878614,0.05554660712998885,60.04
+atlanta-ip,best_bound,60.0,1,time limit exceeded,True,94.00994413174985,90.009878614,0.0444402945470441,60.04
+atlanta-ip,best_bound,60.0,2,time limit exceeded,True,105.01040367440979,90.009878614,0.16665420830904915,60.04
+atlanta-ip,best_bound,900.0,0,time limit exceeded,True,93.00997492335983,90.009878614,0.03333074497550986,899.98
+atlanta-ip,best_bound,900.0,1,time limit exceeded,True,90.00987861439978,90.009878614,4.441509876515727e-12,900.03
+atlanta-ip,best_bound,900.0,2,time limit exceeded,True,92.0098699028798,90.009878614,0.02221968654636895,900.04
+atlanta-ip,best_estimate,10.0,0,"time limit exceeded, no integer solution",False,,90.009878614,,10.1
+atlanta-ip,best_estimate,10.0,1,time limit exceeded,True,108.01032456480976,90.009878614,0.1999830043989194,10.04
+atlanta-ip,best_estimate,10.0,2,time limit exceeded,True,105.01040367440979,90.009878614,0.16665420830904915,10.04
+atlanta-ip,best_estimate,300.0,0,time limit exceeded,True,94.00980115094977,90.009878614,0.04443870604584535,300.03
+atlanta-ip,best_estimate,300.0,1,time limit exceeded,True,91.01005002890983,90.009878614,0.01111179606406295,300.1
+atlanta-ip,best_estimate,300.0,2,time limit exceeded,True,92.00980373026978,90.009878614,0.022218951375840578,300.04
+atlanta-ip,best_estimate,60.0,0,time limit exceeded,True,95.00962197918984,90.009878614,0.05554660712998885,60.04
+atlanta-ip,best_estimate,60.0,1,time limit exceeded,True,93.01004692614983,90.009878614,0.0333315449187061,60.04
+atlanta-ip,best_estimate,60.0,2,time limit exceeded,True,98.00968875228985,90.009878614,0.08887702396085186,60.04
+atlanta-ip,best_estimate,900.0,0,time limit exceeded,True,92.00980373026978,90.009878614,0.022218951375840578,899.98
+atlanta-ip,best_estimate,900.0,1,time limit exceeded,True,91.00997516922985,90.009878614,0.011110964381128404,900.03
+atlanta-ip,best_estimate,900.0,2,time limit exceeded,True,92.00980373026978,90.009878614,0.022218951375840578,900.04
+atlanta-ip,depth_first,10.0,0,"time limit exceeded, no integer solution",False,,90.009878614,,10.12
+atlanta-ip,depth_first,10.0,1,time limit exceeded,True,108.01032456480976,90.009878614,0.1999830043989194,10.04
+atlanta-ip,depth_first,10.0,2,"time limit exceeded, no integer solution",False,,90.009878614,,10.04
+atlanta-ip,depth_first,300.0,0,time limit exceeded,True,92.00980470903977,90.009878614,0.022218962249869127,300.03
+atlanta-ip,depth_first,300.0,1,time limit exceeded,True,92.00982440274986,90.009878614,0.02221918104485463,300.1
+atlanta-ip,depth_first,300.0,2,time limit exceeded,True,93.00987582062982,90.009878614,0.03332964395491585,300.04
+atlanta-ip,depth_first,60.0,0,time limit exceeded,True,95.00962197918984,90.009878614,0.05554660712998885,60.04
+atlanta-ip,depth_first,60.0,1,time limit exceeded,True,94.00994413174985,90.009878614,0.0444402945470441,60.04
+atlanta-ip,depth_first,60.0,2,time limit exceeded,True,105.01040367440979,90.009878614,0.16665420830904915,60.04
+atlanta-ip,depth_first,900.0,0,time limit exceeded,True,92.00980470903977,90.009878614,0.022218962249869127,899.98
+atlanta-ip,depth_first,900.0,1,"integer optimal, tolerance",True,90.00987861439978,90.009878614,4.441509876515727e-12,856.5
+atlanta-ip,depth_first,900.0,2,time limit exceeded,True,93.0098684247498,90.009878614,0.03332956178749009,900.04
+csched007,auto,10.0,0,time limit exceeded,True,570.0,350.9999999999955,0.6239316239316447,10.01
+csched007,auto,10.0,1,time limit exceeded,True,533.0,350.9999999999955,0.5185185185185379,10.0
+csched007,auto,10.0,2,time limit exceeded,True,581.0,350.9999999999955,0.6552706552706764,10.0
+csched007,auto,300.0,0,time limit exceeded,True,373.0,350.9999999999955,0.06267806267807627,300.0
+csched007,auto,300.0,1,time limit exceeded,True,399.0,350.9999999999955,0.13675213675215128,300.02
+csched007,auto,300.0,2,time limit exceeded,True,468.0,350.9999999999955,0.3333333333333504,300.02
+csched007,auto,60.0,0,time limit exceeded,True,461.99999999999454,350.9999999999955,0.31623931623931756,60.0
+csched007,auto,60.0,1,time limit exceeded,True,456.0,350.9999999999955,0.2991452991453158,60.01
+csched007,auto,60.0,2,time limit exceeded,True,508.0,350.9999999999955,0.4472934472934658,60.01
+csched007,auto,900.0,0,time limit exceeded,True,419.0,350.9999999999955,0.193732193732209,899.98
+csched007,auto,900.0,1,time limit exceeded,True,368.9999999999964,350.9999999999955,0.05128205128205453,899.98
+csched007,auto,900.0,2,time limit exceeded,True,356.00000000000176,350.9999999999955,0.014245014245032241,899.98
+csched007,best_bound,10.0,0,time limit exceeded,True,416.0,350.9999999999955,0.18518518518520036,10.0
+csched007,best_bound,10.0,1,time limit exceeded,True,456.99999999999795,350.9999999999955,0.3019943019943128,10.01
+csched007,best_bound,10.0,2,time limit exceeded,True,438.0,350.9999999999955,0.24786324786326383,10.01
+csched007,best_bound,300.0,0,integer optimal solution,True,350.99999999999864,350.9999999999955,8.907088425482852e-15,172.92
+csched007,best_bound,300.0,1,integer optimal solution,True,350.99999999998175,350.9999999999955,-3.9191189072124545e-14,205.19
+csched007,best_bound,300.0,2,integer optimal solution,True,351.00000000391015,350.9999999999955,1.11528083381405e-11,198.66
+csched007,best_bound,60.0,0,time limit exceeded,True,357.9999999999786,350.9999999999955,0.0199430199429721,60.0
+csched007,best_bound,60.0,1,time limit exceeded,True,366.0,350.9999999999955,0.04273504273505607,60.0
+csched007,best_bound,60.0,2,time limit exceeded,True,383.9999999999867,350.9999999999955,0.09401709401707012,60.0
+csched007,best_bound,900.0,0,integer optimal solution,True,350.99999999999864,350.9999999999955,8.907088425482852e-15,173.31
+csched007,best_bound,900.0,1,integer optimal solution,True,350.99999999998175,350.9999999999955,-3.9191189072124545e-14,205.21
+csched007,best_bound,900.0,2,integer optimal solution,True,351.00000000391015,350.9999999999955,1.11528083381405e-11,199.29
+csched007,best_estimate,10.0,0,time limit exceeded,True,376.0,350.9999999999955,0.07122507122508492,10.0
+csched007,best_estimate,10.0,1,time limit exceeded,True,426.0,350.9999999999955,0.2136752136752292,10.01
+csched007,best_estimate,10.0,2,time limit exceeded,True,472.0,350.9999999999955,0.34472934472936195,10.0
+csched007,best_estimate,300.0,0,integer optimal solution,True,350.9999999999959,350.9999999999955,1.1336294359705448e-15,227.07
+csched007,best_estimate,300.0,1,integer optimal solution,True,350.9999999999268,350.9999999999955,-1.9579399829834123e-13,146.64
+csched007,best_estimate,300.0,2,time limit exceeded,True,351.00000000000625,350.9999999999955,3.0607994771204706e-14,300.01
+csched007,best_estimate,60.0,0,time limit exceeded,True,357.0,350.9999999999955,0.017094017094030106,60.0
+csched007,best_estimate,60.0,1,time limit exceeded,True,352.0,350.9999999999955,0.002849002849015679,60.0
+csched007,best_estimate,60.0,2,time limit exceeded,True,367.0,350.9999999999955,0.045584045584058965,60.01
+csched007,best_estimate,900.0,0,integer optimal solution,True,350.9999999999959,350.9999999999955,1.1336294359705448e-15,227.26
+csched007,best_estimate,900.0,1,integer optimal solution,True,350.9999999999268,350.9999999999955,-1.9579399829834123e-13,147.17
+csched007,best_estimate,900.0,2,time limit exceeded,True,351.00000000000625,350.9999999999955,3.0607994771204706e-14,900.06
+csched007,depth_first,10.0,0,time limit exceeded,True,424.0,350.9999999999955,0.20797720797722344,10.0
+csched007,depth_first,10.0,1,"time limit exceeded, no integer solution",False,,350.9999999999955,,10.01
+csched007,depth_first,10.0,2,"time limit exceeded, no integer solution",False,,350.9999999999955,,10.0
+csched007,depth_first,300.0,0,integer optimal solution,True,350.9999999886727,350.9999999999955,-3.22587211770401e-11,299.41
+csched007,depth_first,300.0,1,integer optimal solution,True,350.9999999991537,350.9999999999955,-2.398274045326828e-12,272.23
+csched007,depth_first,300.0,2,time limit exceeded,True,355.99999999999534,350.9999999999955,0.014245014245013942,300.01
+csched007,depth_first,60.0,0,time limit exceeded,True,356.0,350.9999999999955,0.014245014245027221,60.01
+csched007,depth_first,60.0,1,time limit exceeded,True,401.99999999998505,350.9999999999955,0.14529914529911736,60.01
+csched007,depth_first,60.0,2,time limit exceeded,True,356.0,350.9999999999955,0.014245014245027221,60.0
+csched007,depth_first,900.0,0,integer optimal solution,True,350.9999999886727,350.9999999999955,-3.22587211770401e-11,297.92
+csched007,depth_first,900.0,1,integer optimal solution,True,350.9999999991537,350.9999999999955,-2.398274045326828e-12,271.84
+csched007,depth_first,900.0,2,integer optimal solution,True,350.9999999999882,350.9999999999955,-2.0891171034314323e-14,508.44
+csched008,auto,10.0,0,"time limit exceeded, no integer solution",False,,173.0,,10.01
+csched008,auto,10.0,1,time limit exceeded,True,181.0,173.0,0.046242774566473986,10.01
+csched008,auto,10.0,2,time limit exceeded,True,180.0,173.0,0.04046242774566474,10.01
+csched008,auto,300.0,0,time limit exceeded,True,173.0000000000016,173.0,9.200090913888003e-15,300.06
+csched008,auto,300.0,1,time limit exceeded,True,176.0,173.0,0.017341040462427744,300.01
+csched008,auto,300.0,2,time limit exceeded,True,174.0,173.0,0.005780346820809248,300.01
+csched008,auto,60.0,0,time limit exceeded,True,180.00000000002265,173.0,0.04046242774579568,60.0
+csched008,auto,60.0,1,time limit exceeded,True,178.0,173.0,0.028901734104046242,60.0
+csched008,auto,60.0,2,time limit exceeded,True,174.0,173.0,0.005780346820809248,60.0
+csched008,auto,900.0,0,time limit exceeded,True,173.0000000000016,173.0,9.200090913888003e-15,900.04
+csched008,auto,900.0,1,time limit exceeded,True,174.0,173.0,0.005780346820809248,899.97
+csched008,auto,900.0,2,time limit exceeded,True,173.0,173.0,0.0,900.0
+csched008,best_bound,10.0,0,time limit exceeded,True,182.0,173.0,0.05202312138728324,10.0
+csched008,best_bound,10.0,1,time limit exceeded,True,180.0,173.0,0.04046242774566474,10.01
+csched008,best_bound,10.0,2,time limit exceeded,True,189.0,173.0,0.09248554913294797,10.0
+csched008,best_bound,300.0,0,time limit exceeded,True,173.0,173.0,0.0,300.06
+csched008,best_bound,300.0,1,integer optimal solution,True,173.0,173.0,0.0,266.15
+csched008,best_bound,300.0,2,time limit exceeded,True,173.0,173.0,0.0,300.01
+csched008,best_bound,60.0,0,time limit exceeded,True,179.0,173.0,0.03468208092485549,60.0
+csched008,best_bound,60.0,1,time limit exceeded,True,176.0,173.0,0.017341040462427744,60.01
+csched008,best_bound,60.0,2,time limit exceeded,True,186.0,173.0,0.07514450867052024,60.0
+csched008,best_bound,900.0,0,integer optimal solution,True,173.0,173.0,0.0,632.83
+csched008,best_bound,900.0,1,integer optimal solution,True,173.0,173.0,0.0,268.18
+csched008,best_bound,900.0,2,time limit exceeded,True,173.0,173.0,0.0,899.97
+csched008,best_estimate,10.0,0,time limit exceeded,True,181.0,173.0,0.046242774566473986,10.0
+csched008,best_estimate,10.0,1,time limit exceeded,True,179.0,173.0,0.03468208092485549,10.0
+csched008,best_estimate,10.0,2,time limit exceeded,True,176.0,173.0,0.017341040462427744,10.01
+csched008,best_estimate,300.0,0,time limit exceeded,True,173.0,173.0,0.0,300.01
+csched008,best_estimate,300.0,1,integer optimal solution,True,173.0,173.0,0.0,229.13
+csched008,best_estimate,300.0,2,time limit exceeded,True,174.0,173.0,0.005780346820809248,300.03
+csched008,best_estimate,60.0,0,time limit exceeded,True,174.0,173.0,0.005780346820809248,60.01
+csched008,best_estimate,60.0,1,time limit exceeded,True,174.0,173.0,0.005780346820809248,60.0
+csched008,best_estimate,60.0,2,time limit exceeded,True,174.0,173.0,0.005780346820809248,60.01
+csched008,best_estimate,900.0,0,integer optimal solution,True,173.0,173.0,0.0,298.58
+csched008,best_estimate,900.0,1,integer optimal solution,True,173.0,173.0,0.0,229.32
+csched008,best_estimate,900.0,2,time limit exceeded,True,173.0,173.0,0.0,899.97
+csched008,depth_first,10.0,0,"time limit exceeded, no integer solution",False,,173.0,,10.01
+csched008,depth_first,10.0,1,time limit exceeded,True,184.0,173.0,0.06358381502890173,10.0
+csched008,depth_first,10.0,2,time limit exceeded,True,182.0,173.0,0.05202312138728324,10.0
+csched008,depth_first,300.0,0,time limit exceeded,True,173.0,173.0,0.0,300.06
+csched008,depth_first,300.0,1,time limit exceeded,True,176.0,173.0,0.017341040462427744,300.01
+csched008,depth_first,300.0,2,time limit exceeded,True,179.0,173.0,0.03468208092485549,300.01
+csched008,depth_first,60.0,0,time limit exceeded,True,176.0,173.0,0.017341040462427744,60.0
+csched008,depth_first,60.0,1,time limit exceeded,True,184.0,173.0,0.06358381502890173,60.0
+csched008,depth_first,60.0,2,time limit exceeded,True,182.0,173.0,0.05202312138728324,60.0
+csched008,depth_first,900.0,0,time limit exceeded,True,173.0,173.0,0.0,900.04
+csched008,depth_first,900.0,1,time limit exceeded,True,175.0,173.0,0.011560693641618497,899.97
+csched008,depth_first,900.0,2,time limit exceeded,True,174.0,173.0,0.005780346820809248,900.01
+drayage-100-23,auto,10.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.11
+drayage-100-23,auto,10.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,auto,10.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,auto,300.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,auto,300.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,auto,300.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,auto,60.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,auto,60.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,auto,60.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,auto,900.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.11
+drayage-100-23,auto,900.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,auto,900.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,best_bound,10.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.11
+drayage-100-23,best_bound,10.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_bound,10.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_bound,300.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_bound,300.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,best_bound,300.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,best_bound,60.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_bound,60.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,best_bound,60.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_bound,900.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_bound,900.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_bound,900.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,best_estimate,10.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.11
+drayage-100-23,best_estimate,10.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,10.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,300.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,300.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,300.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,60.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,60.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,60.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,900.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.11
+drayage-100-23,best_estimate,900.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,best_estimate,900.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,depth_first,10.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,10.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,10.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,300.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,300.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,300.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-100-23,depth_first,60.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,60.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,60.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,900.0,0,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.11
+drayage-100-23,depth_first,900.0,1,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.1
+drayage-100-23,depth_first,900.0,2,integer optimal solution,True,103333.87407302856,103333.87407,2.9308483558753864e-11,0.09
+drayage-25-23,auto,10.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.29
+drayage-25-23,auto,10.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,auto,10.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.29
+drayage-25-23,auto,300.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.3
+drayage-25-23,auto,300.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,auto,300.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.31
+drayage-25-23,auto,60.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.28
+drayage-25-23,auto,60.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.33
+drayage-25-23,auto,60.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.3
+drayage-25-23,auto,900.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.29
+drayage-25-23,auto,900.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,auto,900.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.29
+drayage-25-23,best_bound,10.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.28
+drayage-25-23,best_bound,10.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,best_bound,10.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.29
+drayage-25-23,best_bound,300.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.29
+drayage-25-23,best_bound,300.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.33
+drayage-25-23,best_bound,300.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.31
+drayage-25-23,best_bound,60.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.29
+drayage-25-23,best_bound,60.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.33
+drayage-25-23,best_bound,60.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.28
+drayage-25-23,best_bound,900.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.29
+drayage-25-23,best_bound,900.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,best_bound,900.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.3
+drayage-25-23,best_estimate,10.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.25
+drayage-25-23,best_estimate,10.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.33
+drayage-25-23,best_estimate,10.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.3
+drayage-25-23,best_estimate,300.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.28
+drayage-25-23,best_estimate,300.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.31
+drayage-25-23,best_estimate,300.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.29
+drayage-25-23,best_estimate,60.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.28
+drayage-25-23,best_estimate,60.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.33
+drayage-25-23,best_estimate,60.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.3
+drayage-25-23,best_estimate,900.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.29
+drayage-25-23,best_estimate,900.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,best_estimate,900.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.29
+drayage-25-23,depth_first,10.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.28
+drayage-25-23,depth_first,10.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.31
+drayage-25-23,depth_first,10.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.3
+drayage-25-23,depth_first,300.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.29
+drayage-25-23,depth_first,300.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,depth_first,300.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.3
+drayage-25-23,depth_first,60.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.28
+drayage-25-23,depth_first,60.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.34
+drayage-25-23,depth_first,60.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.29
+drayage-25-23,depth_first,900.0,0,integer optimal solution,True,101282.64701843262,101282.647018,4.271352502736562e-12,0.28
+drayage-25-23,depth_first,900.0,1,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.32
+drayage-25-23,depth_first,900.0,2,integer optimal solution,True,101282.64701843259,101282.647018,4.271065150151361e-12,0.29
+germanrr,auto,10.0,0,time limit exceeded,True,47368817.372999996,47095869.649,0.00579557668292882,10.04
+germanrr,auto,10.0,1,time limit exceeded,True,47377111.33319999,47095869.649,0.005971684699657478,10.03
+germanrr,auto,10.0,2,time limit exceeded,True,47356321.54680001,47095869.649,0.00553024924990516,10.03
+germanrr,auto,300.0,0,time limit exceeded,True,47095869.64939995,47095869.649,8.492350178567313e-12,300.03
+germanrr,auto,300.0,1,time limit exceeded,True,47095869.64940011,47095869.649,8.495672384818127e-12,300.03
+germanrr,auto,300.0,2,time limit exceeded,True,47095869.6494,47095869.649,8.493457580650918e-12,300.02
+germanrr,auto,60.0,0,time limit exceeded,True,47095872.709000066,47095869.649,6.497385210731288e-08,60.03
+germanrr,auto,60.0,1,time limit exceeded,True,47135836.608600006,47095869.649,0.0008486298246083594,60.02
+germanrr,auto,60.0,2,time limit exceeded,True,47105753.0274,47095869.649,0.00020985658559158292,60.03
+germanrr,auto,900.0,0,"integer optimal, tolerance",True,47095869.64939995,47095869.649,8.492350178567313e-12,484.58
+germanrr,auto,900.0,1,"integer optimal, tolerance",True,47095869.64940011,47095869.649,8.495672384818127e-12,424.96
+germanrr,auto,900.0,2,"integer optimal, tolerance",True,47095869.6494,47095869.649,8.493457580650918e-12,436.14
+germanrr,best_bound,10.0,0,time limit exceeded,True,47326782.8274,47095869.649,0.004903045216512006,10.03
+germanrr,best_bound,10.0,1,time limit exceeded,True,47296178.238599986,47095869.649,0.00425320927488686,10.03
+germanrr,best_bound,10.0,2,time limit exceeded,True,47297890.3958,47095869.649,0.004289563995858711,10.03
+germanrr,best_bound,300.0,0,time limit exceeded,True,47095869.64939999,47095869.649,8.493141180055601e-12,300.02
+germanrr,best_bound,300.0,1,time limit exceeded,True,47095869.64940002,47095869.649,8.493773981246233e-12,300.03
+germanrr,best_bound,300.0,2,time limit exceeded,True,47095869.649400085,47095869.649,8.495197783925154e-12,300.03
+germanrr,best_bound,60.0,0,time limit exceeded,True,47096144.72859999,47095869.649,5.840843412417625e-06,60.03
+germanrr,best_bound,60.0,1,time limit exceeded,True,47186003.65879998,47095869.649,0.0019138410750612592,60.03
+germanrr,best_bound,60.0,2,time limit exceeded,True,47105708.79900017,47095869.649,0.0002089174713939865,60.03
+germanrr,best_bound,900.0,0,"integer optimal, tolerance",True,47095869.64939999,47095869.649,8.493141180055601e-12,371.29
+germanrr,best_bound,900.0,1,"integer optimal, tolerance",True,47095869.64940002,47095869.649,8.493773981246233e-12,419.94
+germanrr,best_bound,900.0,2,"integer optimal, tolerance",True,47095869.649400085,47095869.649,8.495197783925154e-12,355.89
+germanrr,best_estimate,10.0,0,time limit exceeded,True,47195794.45879999,47095869.649,0.002121731917145165,10.02
+germanrr,best_estimate,10.0,1,time limit exceeded,True,47377111.33319999,47095869.649,0.005971684699657478,10.03
+germanrr,best_estimate,10.0,2,time limit exceeded,True,47437443.42240001,47095869.649,0.0072527331153607625,10.03
+germanrr,best_estimate,300.0,0,time limit exceeded,True,47095880.02980014,47095869.649,2.2041848298483802e-07,300.02
+germanrr,best_estimate,300.0,1,time limit exceeded,True,47095869.64940001,47095869.649,8.493615780948576e-12,300.03
+germanrr,best_estimate,300.0,2,time limit exceeded,True,47095869.64939999,47095869.649,8.493141180055601e-12,300.03
+germanrr,best_estimate,60.0,0,time limit exceeded,True,47115738.818200186,47095869.649,0.0004218877228145908,60.03
+germanrr,best_estimate,60.0,1,time limit exceeded,True,47146065.86839997,47095869.649,0.0010658306083756452,60.02
+germanrr,best_estimate,60.0,2,time limit exceeded,True,47125454.108799964,47095869.649,0.0006281752523195181,60.03
+germanrr,best_estimate,900.0,0,"integer optimal, tolerance",True,47095869.64940003,47095869.649,8.494090381841549e-12,419.73
+germanrr,best_estimate,900.0,1,"integer optimal, tolerance",True,47095869.64940001,47095869.649,8.493615780948576e-12,386.06
+germanrr,best_estimate,900.0,2,"integer optimal, tolerance",True,47095869.64939999,47095869.649,8.493141180055601e-12,429.79
+germanrr,depth_first,10.0,0,time limit exceeded,True,47326782.8274,47095869.649,0.004903045216512006,10.03
+germanrr,depth_first,10.0,1,time limit exceeded,True,47296178.238599986,47095869.649,0.00425320927488686,10.03
+germanrr,depth_first,10.0,2,time limit exceeded,True,47437443.42240001,47095869.649,0.0072527331153607625,10.03
+germanrr,depth_first,300.0,0,time limit exceeded,True,47095869.64939998,47095869.649,8.492982979757945e-12,300.03
+germanrr,depth_first,300.0,1,time limit exceeded,True,47105442.51020001,47095869.649,0.00020326328553560386,300.03
+germanrr,depth_first,300.0,2,time limit exceeded,True,47095869.64940001,47095869.649,8.493615780948576e-12,300.02
+germanrr,depth_first,60.0,0,time limit exceeded,True,47187666.09780013,47095869.649,0.0019491401153493898,60.03
+germanrr,depth_first,60.0,1,time limit exceeded,True,47164718.41439995,47095869.649,0.0014618854246259173,60.03
+germanrr,depth_first,60.0,2,time limit exceeded,True,47136001.89920004,47095869.649,0.0008521394869474033,60.03
+germanrr,depth_first,900.0,0,"integer optimal, tolerance",True,47095869.64939998,47095869.649,8.492982979757945e-12,362.64
+germanrr,depth_first,900.0,1,"integer optimal, tolerance",True,47095869.649399936,47095869.649,8.492033777971997e-12,442.2
+germanrr,depth_first,900.0,2,"integer optimal, tolerance",True,47095869.649799965,47095869.649,1.698596595951589e-11,426.08
+gfd-schedulen180f7d50m30k18,auto,10.0,0,"time limit exceeded, no integer solution",False,,1.0,,10.53
+gfd-schedulen180f7d50m30k18,auto,10.0,1,"time limit exceeded, no integer solution",False,,1.0,,10.56
+gfd-schedulen180f7d50m30k18,auto,10.0,2,"time limit exceeded, no integer solution",False,,1.0,,10.59
+gfd-schedulen180f7d50m30k18,auto,300.0,0,"time limit exceeded, no integer solution",False,,1.0,,300.3
+gfd-schedulen180f7d50m30k18,auto,300.0,1,"time limit exceeded, no integer solution",False,,1.0,,300.34
+gfd-schedulen180f7d50m30k18,auto,300.0,2,"time limit exceeded, no integer solution",False,,1.0,,300.58
+gfd-schedulen180f7d50m30k18,auto,60.0,0,"time limit exceeded, no integer solution",False,,1.0,,60.45
+gfd-schedulen180f7d50m30k18,auto,60.0,1,"time limit exceeded, no integer solution",False,,1.0,,60.47
+gfd-schedulen180f7d50m30k18,auto,60.0,2,"time limit exceeded, no integer solution",False,,1.0,,60.33
+gfd-schedulen180f7d50m30k18,auto,900.0,0,"time limit exceeded, no integer solution",False,,1.0,,900.59
+gfd-schedulen180f7d50m30k18,auto,900.0,1,"time limit exceeded, no integer solution",False,,1.0,,900.56
+gfd-schedulen180f7d50m30k18,auto,900.0,2,"time limit exceeded, no integer solution",False,,1.0,,900.38
+gfd-schedulen180f7d50m30k18,best_bound,10.0,0,"time limit exceeded, no integer solution",False,,1.0,,10.57
+gfd-schedulen180f7d50m30k18,best_bound,10.0,1,"time limit exceeded, no integer solution",False,,1.0,,10.56
+gfd-schedulen180f7d50m30k18,best_bound,10.0,2,"time limit exceeded, no integer solution",False,,1.0,,10.63
+gfd-schedulen180f7d50m30k18,best_bound,300.0,0,"time limit exceeded, no integer solution",False,,1.0,,300.46
+gfd-schedulen180f7d50m30k18,best_bound,300.0,1,"time limit exceeded, no integer solution",False,,1.0,,300.33
+gfd-schedulen180f7d50m30k18,best_bound,300.0,2,"time limit exceeded, no integer solution",False,,1.0,,300.31
+gfd-schedulen180f7d50m30k18,best_bound,60.0,0,"time limit exceeded, no integer solution",False,,1.0,,60.45
+gfd-schedulen180f7d50m30k18,best_bound,60.0,1,"time limit exceeded, no integer solution",False,,1.0,,60.48
+gfd-schedulen180f7d50m30k18,best_bound,60.0,2,"time limit exceeded, no integer solution",False,,1.0,,60.32
+gfd-schedulen180f7d50m30k18,best_bound,900.0,0,"time limit exceeded, no integer solution",False,,1.0,,900.32
+gfd-schedulen180f7d50m30k18,best_bound,900.0,1,"time limit exceeded, no integer solution",False,,1.0,,900.4
+gfd-schedulen180f7d50m30k18,best_bound,900.0,2,"time limit exceeded, no integer solution",False,,1.0,,900.65
+gfd-schedulen180f7d50m30k18,best_estimate,10.0,0,"time limit exceeded, no integer solution",False,,1.0,,10.54
+gfd-schedulen180f7d50m30k18,best_estimate,10.0,1,"time limit exceeded, no integer solution",False,,1.0,,10.53
+gfd-schedulen180f7d50m30k18,best_estimate,10.0,2,"time limit exceeded, no integer solution",False,,1.0,,10.56
+gfd-schedulen180f7d50m30k18,best_estimate,300.0,0,"time limit exceeded, no integer solution",False,,1.0,,300.47
+gfd-schedulen180f7d50m30k18,best_estimate,300.0,1,"time limit exceeded, no integer solution",False,,1.0,,300.5
+gfd-schedulen180f7d50m30k18,best_estimate,300.0,2,"time limit exceeded, no integer solution",False,,1.0,,300.4
+gfd-schedulen180f7d50m30k18,best_estimate,60.0,0,"time limit exceeded, no integer solution",False,,1.0,,60.34
+gfd-schedulen180f7d50m30k18,best_estimate,60.0,1,"time limit exceeded, no integer solution",False,,1.0,,60.49
+gfd-schedulen180f7d50m30k18,best_estimate,60.0,2,"time limit exceeded, no integer solution",False,,1.0,,60.46
+gfd-schedulen180f7d50m30k18,best_estimate,900.0,0,"time limit exceeded, no integer solution",False,,1.0,,900.57
+gfd-schedulen180f7d50m30k18,best_estimate,900.0,1,"time limit exceeded, no integer solution",False,,1.0,,900.49
+gfd-schedulen180f7d50m30k18,best_estimate,900.0,2,"time limit exceeded, no integer solution",False,,1.0,,900.61
+gfd-schedulen180f7d50m30k18,depth_first,10.0,0,"time limit exceeded, no integer solution",False,,1.0,,10.56
+gfd-schedulen180f7d50m30k18,depth_first,10.0,1,"time limit exceeded, no integer solution",False,,1.0,,10.48
+gfd-schedulen180f7d50m30k18,depth_first,10.0,2,"time limit exceeded, no integer solution",False,,1.0,,10.55
+gfd-schedulen180f7d50m30k18,depth_first,300.0,0,"time limit exceeded, no integer solution",False,,1.0,,300.34
+gfd-schedulen180f7d50m30k18,depth_first,300.0,1,"time limit exceeded, no integer solution",False,,1.0,,300.52
+gfd-schedulen180f7d50m30k18,depth_first,300.0,2,"time limit exceeded, no integer solution",False,,1.0,,300.39
+gfd-schedulen180f7d50m30k18,depth_first,60.0,0,"time limit exceeded, no integer solution",False,,1.0,,60.38
+gfd-schedulen180f7d50m30k18,depth_first,60.0,1,"time limit exceeded, no integer solution",False,,1.0,,60.33
+gfd-schedulen180f7d50m30k18,depth_first,60.0,2,"time limit exceeded, no integer solution",False,,1.0,,60.3
+gfd-schedulen180f7d50m30k18,depth_first,900.0,0,"time limit exceeded, no integer solution",False,,1.0,,900.42
+gfd-schedulen180f7d50m30k18,depth_first,900.0,1,"time limit exceeded, no integer solution",False,,1.0,,900.34
+gfd-schedulen180f7d50m30k18,depth_first,900.0,2,"time limit exceeded, no integer solution",False,,1.0,,900.33
+irp,auto,10.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.16
+irp,auto,10.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.28
+irp,auto,10.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.1
+irp,auto,300.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.15
+irp,auto,300.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.3
+irp,auto,300.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,auto,60.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.16
+irp,auto,60.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.3
+irp,auto,60.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.13
+irp,auto,900.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.14
+irp,auto,900.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.29
+irp,auto,900.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.1
+irp,best_bound,10.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.14
+irp,best_bound,10.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.3
+irp,best_bound,10.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.1
+irp,best_bound,300.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.15
+irp,best_bound,300.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.31
+irp,best_bound,300.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,best_bound,60.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.15
+irp,best_bound,60.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.3
+irp,best_bound,60.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,best_bound,900.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.16
+irp,best_bound,900.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.3
+irp,best_bound,900.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.1
+irp,best_estimate,10.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.14
+irp,best_estimate,10.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.29
+irp,best_estimate,10.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,best_estimate,300.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.15
+irp,best_estimate,300.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.31
+irp,best_estimate,300.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,best_estimate,60.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.17
+irp,best_estimate,60.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.29
+irp,best_estimate,60.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,best_estimate,900.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.16
+irp,best_estimate,900.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.29
+irp,best_estimate,900.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.1
+irp,depth_first,10.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.15
+irp,depth_first,10.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.29
+irp,depth_first,10.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,depth_first,300.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.16
+irp,depth_first,300.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.28
+irp,depth_first,300.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.1
+irp,depth_first,60.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.15
+irp,depth_first,60.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.28
+irp,depth_first,60.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+irp,depth_first,900.0,0,"integer optimal, tolerance",True,12159.502874999998,12159.49283539698,8.256596844465039e-07,1.16
+irp,depth_first,900.0,1,"integer optimal, tolerance",True,12159.502873999998,12159.49283539698,8.255774441465117e-07,1.29
+irp,depth_first,900.0,2,"integer optimal, tolerance",True,12159.493873,12159.49283539698,8.533275463679207e-08,1.11
+lectsched-5-obj,auto,10.0,0,"time limit exceeded, no integer solution",False,,24.0,,10.05
+lectsched-5-obj,auto,10.0,1,"time limit exceeded, no integer solution",False,,24.0,,10.03
+lectsched-5-obj,auto,10.0,2,time limit exceeded,True,64.0,24.0,1.6666666666666667,10.03
+lectsched-5-obj,auto,300.0,0,time limit exceeded,True,28.0,24.0,0.16666666666666666,300.03
+lectsched-5-obj,auto,300.0,1,time limit exceeded,True,25.0,24.0,0.041666666666666664,300.03
+lectsched-5-obj,auto,300.0,2,time limit exceeded,True,25.00000000000021,24.0,0.0416666666666754,300.02
+lectsched-5-obj,auto,60.0,0,"time limit exceeded, no integer solution",False,,24.0,,60.04
+lectsched-5-obj,auto,60.0,1,time limit exceeded,True,27.0,24.0,0.125,60.03
+lectsched-5-obj,auto,60.0,2,time limit exceeded,True,28.0,24.0,0.16666666666666666,60.03
+lectsched-5-obj,auto,900.0,0,time limit exceeded,True,27.0,24.0,0.125,900.05
+lectsched-5-obj,auto,900.0,1,time limit exceeded,True,25.0,24.0,0.041666666666666664,900.03
+lectsched-5-obj,auto,900.0,2,time limit exceeded,True,25.00000000000021,24.0,0.0416666666666754,900.01
+lectsched-5-obj,best_bound,10.0,0,"time limit exceeded, no integer solution",False,,24.0,,10.04
+lectsched-5-obj,best_bound,10.0,1,"time limit exceeded, no integer solution",False,,24.0,,10.04
+lectsched-5-obj,best_bound,10.0,2,"time limit exceeded, no integer solution",False,,24.0,,10.03
+lectsched-5-obj,best_bound,300.0,0,time limit exceeded,True,28.0,24.0,0.16666666666666666,300.04
+lectsched-5-obj,best_bound,300.0,1,time limit exceeded,True,26.0,24.0,0.08333333333333333,300.04
+lectsched-5-obj,best_bound,300.0,2,time limit exceeded,True,30.0,24.0,0.25,300.02
+lectsched-5-obj,best_bound,60.0,0,"time limit exceeded, no integer solution",False,,24.0,,60.04
+lectsched-5-obj,best_bound,60.0,1,time limit exceeded,True,27.0,24.0,0.125,60.04
+lectsched-5-obj,best_bound,60.0,2,"time limit exceeded, no integer solution",False,,24.0,,60.04
+lectsched-5-obj,best_bound,900.0,0,integer optimal solution,True,24.0,24.0,0.0,776.29
+lectsched-5-obj,best_bound,900.0,1,time limit exceeded,True,24.0,24.0,0.0,900.03
+lectsched-5-obj,best_bound,900.0,2,time limit exceeded,True,24.0,24.0,0.0,900.03
+lectsched-5-obj,best_estimate,10.0,0,"time limit exceeded, no integer solution",False,,24.0,,10.04
+lectsched-5-obj,best_estimate,10.0,1,"time limit exceeded, no integer solution",False,,24.0,,10.03
+lectsched-5-obj,best_estimate,10.0,2,"time limit exceeded, no integer solution",False,,24.0,,10.03
+lectsched-5-obj,best_estimate,300.0,0,time limit exceeded,True,25.0,24.0,0.041666666666666664,300.04
+lectsched-5-obj,best_estimate,300.0,1,time limit exceeded,True,24.0,24.0,0.0,300.02
+lectsched-5-obj,best_estimate,300.0,2,time limit exceeded,True,25.0,24.0,0.041666666666666664,300.02
+lectsched-5-obj,best_estimate,60.0,0,"time limit exceeded, no integer solution",False,,24.0,,60.05
+lectsched-5-obj,best_estimate,60.0,1,"time limit exceeded, no integer solution",False,,24.0,,60.04
+lectsched-5-obj,best_estimate,60.0,2,"time limit exceeded, no integer solution",False,,24.0,,60.04
+lectsched-5-obj,best_estimate,900.0,0,integer optimal solution,True,24.0,24.0,0.0,825.1
+lectsched-5-obj,best_estimate,900.0,1,integer optimal solution,True,24.0,24.0,0.0,304.34
+lectsched-5-obj,best_estimate,900.0,2,time limit exceeded,True,24.0,24.0,0.0,900.04
+lectsched-5-obj,depth_first,10.0,0,"time limit exceeded, no integer solution",False,,24.0,,10.03
+lectsched-5-obj,depth_first,10.0,1,"time limit exceeded, no integer solution",False,,24.0,,10.03
+lectsched-5-obj,depth_first,10.0,2,"time limit exceeded, no integer solution",False,,24.0,,10.04
+lectsched-5-obj,depth_first,300.0,0,time limit exceeded,True,29.0,24.0,0.20833333333333334,300.04
+lectsched-5-obj,depth_first,300.0,1,time limit exceeded,True,26.0,24.0,0.08333333333333333,300.04
+lectsched-5-obj,depth_first,300.0,2,time limit exceeded,True,24.0,24.0,0.0,300.02
+lectsched-5-obj,depth_first,60.0,0,"time limit exceeded, no integer solution",False,,24.0,,60.03
+lectsched-5-obj,depth_first,60.0,1,"time limit exceeded, no integer solution",False,,24.0,,60.05
+lectsched-5-obj,depth_first,60.0,2,time limit exceeded,True,30.0,24.0,0.25,60.05
+lectsched-5-obj,depth_first,900.0,0,time limit exceeded,True,24.0,24.0,0.0,900.06
+lectsched-5-obj,depth_first,900.0,1,time limit exceeded,True,24.0,24.0,0.0,900.02
+lectsched-5-obj,depth_first,900.0,2,time limit exceeded,True,24.0,24.0,0.0,900.02
+mcsched,auto,10.0,0,time limit exceeded,True,211932.0,211913.0,8.965943571182513e-05,10.0
+mcsched,auto,10.0,1,time limit exceeded,True,211936.0,211913.0,0.00010853510638799885,10.0
+mcsched,auto,10.0,2,time limit exceeded,True,211936.0,211913.0,0.00010853510638799885,10.0
+mcsched,auto,300.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,83.16
+mcsched,auto,300.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,79.72
+mcsched,auto,300.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,134.92
+mcsched,auto,60.0,0,time limit exceeded,True,211932.0,211913.0,8.965943571182513e-05,60.0
+mcsched,auto,60.0,1,time limit exceeded,True,211920.0,211913.0,3.3032423683303995e-05,60.0
+mcsched,auto,60.0,2,time limit exceeded,True,211913.0,211913.0,0.0,60.0
+mcsched,auto,900.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,81.84
+mcsched,auto,900.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,75.93
+mcsched,auto,900.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,135.37
+mcsched,best_bound,10.0,0,time limit exceeded,True,211955.0,211913.0,0.000198194542099824,10.0
+mcsched,best_bound,10.0,1,time limit exceeded,True,211973.0,211913.0,0.0002831350601426057,10.0
+mcsched,best_bound,10.0,2,time limit exceeded,True,212842.0,211913.0,0.004383874514541345,10.0
+mcsched,best_bound,300.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.69
+mcsched,best_bound,300.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.31
+mcsched,best_bound,300.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.3
+mcsched,best_bound,60.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.72
+mcsched,best_bound,60.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.6
+mcsched,best_bound,60.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.06
+mcsched,best_bound,900.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,23.98
+mcsched,best_bound,900.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.53
+mcsched,best_bound,900.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,22.94
+mcsched,best_estimate,10.0,0,time limit exceeded,True,212824.0,211913.0,0.004298933996498563,10.0
+mcsched,best_estimate,10.0,1,time limit exceeded,True,212808.0,211913.0,0.004223431313793868,10.0
+mcsched,best_estimate,10.0,2,time limit exceeded,True,212806.0,211913.0,0.004213993478455781,10.0
+mcsched,best_estimate,300.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,175.23
+mcsched,best_estimate,300.0,1,time limit exceeded,True,211913.0,211913.0,0.0,300.0
+mcsched,best_estimate,300.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,299.22
+mcsched,best_estimate,60.0,0,time limit exceeded,True,211932.0,211913.0,8.965943571182513e-05,60.0
+mcsched,best_estimate,60.0,1,time limit exceeded,True,212797.0,211913.0,0.004171523219434391,60.0
+mcsched,best_estimate,60.0,2,time limit exceeded,True,212806.0,211913.0,0.004213993478455781,60.0
+mcsched,best_estimate,900.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,173.08
+mcsched,best_estimate,900.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,324.27
+mcsched,best_estimate,900.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,306.49
+mcsched,depth_first,10.0,0,time limit exceeded,True,211973.0,211913.0,0.0002831350601426057,10.0
+mcsched,depth_first,10.0,1,time limit exceeded,True,211932.0,211913.0,8.965943571182513e-05,10.0
+mcsched,depth_first,10.0,2,time limit exceeded,True,211973.0,211913.0,0.0002831350601426057,10.0
+mcsched,depth_first,300.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,23.56
+mcsched,depth_first,300.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,24.43
+mcsched,depth_first,300.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,23.96
+mcsched,depth_first,60.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,23.09
+mcsched,depth_first,60.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,24.41
+mcsched,depth_first,60.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,23.11
+mcsched,depth_first,900.0,0,"integer optimal, tolerance",True,211913.0,211913.0,0.0,24.65
+mcsched,depth_first,900.0,1,"integer optimal, tolerance",True,211913.0,211913.0,0.0,24.63
+mcsched,depth_first,900.0,2,"integer optimal, tolerance",True,211913.0,211913.0,0.0,24.21
+rail01,auto,10.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,10.1
+rail01,auto,10.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,10.08
+rail01,auto,10.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,auto,300.0,0,time limit exceeded,True,-70.46412976666666,-70.5699643,0.0014997107393086265,300.14
+rail01,auto,300.0,1,time limit exceeded,True,-65.69913996666666,-70.5699643,0.06902121010897737,300.07
+rail01,auto,300.0,2,time limit exceeded,True,-70.41580093333326,-70.5699643,0.002184546473785542,300.08
+rail01,auto,60.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,auto,60.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,auto,60.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,auto,900.0,0,time limit exceeded,True,-70.49329988333338,-70.5699643,0.001086360428647926,900.02
+rail01,auto,900.0,1,integer optimal solution,True,-70.56996430000002,-70.5699643,-4.0274512977759874e-16,780.68
+rail01,auto,900.0,2,time limit exceeded,True,-70.50579888333338,-70.5699643,0.0009092454176941034,900.07
+rail01,best_bound,10.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,best_bound,10.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,best_bound,10.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,best_bound,300.0,0,time limit exceeded,True,-70.08163536666672,-70.5699643,0.006919784332855024,300.14
+rail01,best_bound,300.0,1,time limit exceeded,True,-70.50579888333338,-70.5699643,0.0009092454176941034,300.08
+rail01,best_bound,300.0,2,time limit exceeded,True,-70.51829888333339,-70.5699643,0.0007321162364058135,300.07
+rail01,best_bound,60.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,best_bound,60.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,best_bound,60.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,best_bound,900.0,0,time limit exceeded,True,-70.50579988333341,-70.5699643,0.0009092312473592334,900.02
+rail01,best_bound,900.0,1,integer optimal solution,True,-70.56996430000002,-70.5699643,-4.0274512977759874e-16,791.9
+rail01,best_bound,900.0,2,time limit exceeded,True,-70.56996430000002,-70.5699643,-4.0274512977759874e-16,900.07
+rail01,best_estimate,10.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,best_estimate,10.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,best_estimate,10.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,best_estimate,300.0,0,time limit exceeded,True,-70.54496429999999,-70.5699643,0.0003542583625765797,300.16
+rail01,best_estimate,300.0,1,time limit exceeded,True,-70.49329888333335,-70.5699643,0.001086374598982796,300.08
+rail01,best_estimate,300.0,2,time limit exceeded,True,-70.46079713333337,-70.5699643,0.0015469352684173451,300.07
+rail01,best_estimate,60.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,best_estimate,60.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,best_estimate,60.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,best_estimate,900.0,0,time limit exceeded,True,-70.55746430000002,-70.5699643,0.00017712918128788712,900.02
+rail01,best_estimate,900.0,1,integer optimal solution,True,-70.56996430000002,-70.5699643,-4.0274512977759874e-16,826.27
+rail01,best_estimate,900.0,2,time limit exceeded,True,-70.56996430000002,-70.5699643,-4.0274512977759874e-16,900.08
+rail01,depth_first,10.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,depth_first,10.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,depth_first,10.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,10.07
+rail01,depth_first,300.0,0,time limit exceeded,True,-70.08163536666672,-70.5699643,0.006919784332855024,300.14
+rail01,depth_first,300.0,1,time limit exceeded,True,-70.49329888333335,-70.5699643,0.001086374598982796,300.08
+rail01,depth_first,300.0,2,time limit exceeded,True,-70.38663376666669,-70.5699643,0.0025978549819573086,300.08
+rail01,depth_first,60.0,0,"time limit exceeded, no integer solution",False,,-70.5699643,,60.1
+rail01,depth_first,60.0,1,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,depth_first,60.0,2,"time limit exceeded, no integer solution",False,,-70.5699643,,60.07
+rail01,depth_first,900.0,0,time limit exceeded,True,-70.56996430000001,-70.5699643,-2.0137256488879937e-16,900.03
+rail01,depth_first,900.0,1,integer optimal solution,True,-70.56996430000002,-70.5699643,-4.0274512977759874e-16,797.11
+rail01,depth_first,900.0,2,time limit exceeded,True,-70.56996430000002,-70.5699643,-4.0274512977759874e-16,900.07
+rail02,auto,10.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,10.26
+rail02,auto,10.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,10.16
+rail02,auto,10.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,10.21
+rail02,auto,300.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,300.18
+rail02,auto,300.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,300.25
+rail02,auto,300.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,300.26
+rail02,auto,60.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,60.2
+rail02,auto,60.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,60.21
+rail02,auto,60.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,60.21
+rail02,auto,900.0,0,time limit exceeded,True,-146.16662533333363,-200.4499077,0.2708072205645939,900.26
+rail02,auto,900.0,1,time limit exceeded,True,-198.41661400000075,-200.4499077,0.010143649968860836,900.23
+rail02,auto,900.0,2,time limit exceeded,True,-45.511092111111104,-200.4499077,0.7729552852714479,900.19
+rail02,best_bound,10.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,10.16
+rail02,best_bound,10.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,10.17
+rail02,best_bound,10.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,10.19
+rail02,best_bound,300.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,300.18
+rail02,best_bound,300.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,300.21
+rail02,best_bound,300.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,300.21
+rail02,best_bound,60.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,60.22
+rail02,best_bound,60.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,60.23
+rail02,best_bound,60.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,60.23
+rail02,best_bound,900.0,0,time limit exceeded,True,-146.16662533333363,-200.4499077,0.2708072205645939,900.19
+rail02,best_bound,900.0,1,time limit exceeded,True,-198.47216622222297,-200.4499077,0.009866512289628978,900.19
+rail02,best_bound,900.0,2,time limit exceeded,True,-74.89997766666669,-200.4499077,0.6263406727092912,900.19
+rail02,best_estimate,10.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,10.18
+rail02,best_estimate,10.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,10.15
+rail02,best_estimate,10.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,10.17
+rail02,best_estimate,300.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,300.18
+rail02,best_estimate,300.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,300.22
+rail02,best_estimate,300.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,300.21
+rail02,best_estimate,60.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,60.21
+rail02,best_estimate,60.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,60.21
+rail02,best_estimate,60.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,60.22
+rail02,best_estimate,900.0,0,time limit exceeded,True,-146.16662533333363,-200.4499077,0.2708072205645939,900.19
+rail02,best_estimate,900.0,1,time limit exceeded,True,-198.41661400000075,-200.4499077,0.010143649968860836,900.21
+rail02,best_estimate,900.0,2,time limit exceeded,True,-45.511092111111104,-200.4499077,0.7729552852714479,900.19
+rail02,depth_first,10.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,10.18
+rail02,depth_first,10.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,10.18
+rail02,depth_first,10.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,10.18
+rail02,depth_first,300.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,300.19
+rail02,depth_first,300.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,300.22
+rail02,depth_first,300.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,300.22
+rail02,depth_first,60.0,0,time limit exceeded,True,-44.24998433333335,-200.4499077,0.7792466714449211,60.21
+rail02,depth_first,60.0,1,"time limit exceeded, no integer solution",False,,-200.4499077,,60.21
+rail02,depth_first,60.0,2,time limit exceeded,True,-44.19442544444446,-200.4499077,0.7795238423826699,60.22
+rail02,depth_first,900.0,0,time limit exceeded,True,-146.16662533333363,-200.4499077,0.2708072205645939,900.21
+rail02,depth_first,900.0,1,time limit exceeded,True,-198.41661400000075,-200.4499077,0.010143649968860836,900.18
+rail02,depth_first,900.0,2,time limit exceeded,True,-74.89997766666669,-200.4499077,0.6263406727092912,900.13
+rail507,auto,10.0,0,time limit exceeded,True,176.0,174.0,0.011494252873563218,10.09
+rail507,auto,10.0,1,time limit exceeded,True,176.0,174.0,0.011494252873563218,10.08
+rail507,auto,10.0,2,time limit exceeded,True,177.0,174.0,0.017241379310344827,10.07
+rail507,auto,300.0,0,integer optimal solution,True,174.0,174.0,0.0,184.24
+rail507,auto,300.0,1,integer optimal solution,True,174.0,174.0,0.0,103.01
+rail507,auto,300.0,2,integer optimal solution,True,174.0,174.0,0.0,181.63
+rail507,auto,60.0,0,time limit exceeded,True,175.0,174.0,0.005747126436781609,60.07
+rail507,auto,60.0,1,time limit exceeded,True,175.0,174.0,0.005747126436781609,60.07
+rail507,auto,60.0,2,time limit exceeded,True,174.99999999999991,174.0,0.005747126436781119,60.06
+rail507,auto,900.0,0,integer optimal solution,True,174.0,174.0,0.0,198.76
+rail507,auto,900.0,1,integer optimal solution,True,174.0,174.0,0.0,97.33
+rail507,auto,900.0,2,integer optimal solution,True,174.0,174.0,0.0,162.4
+rail507,best_bound,10.0,0,time limit exceeded,True,176.0,174.0,0.011494252873563218,10.06
+rail507,best_bound,10.0,1,time limit exceeded,True,176.0,174.0,0.011494252873563218,10.07
+rail507,best_bound,10.0,2,time limit exceeded,True,176.0,174.0,0.011494252873563218,10.07
+rail507,best_bound,300.0,0,integer optimal solution,True,174.0,174.0,0.0,44.01
+rail507,best_bound,300.0,1,integer optimal solution,True,174.0,174.0,0.0,49.52
+rail507,best_bound,300.0,2,integer optimal solution,True,174.0,174.0,0.0,54.67
+rail507,best_bound,60.0,0,integer optimal solution,True,174.0,174.0,0.0,45.82
+rail507,best_bound,60.0,1,integer optimal solution,True,174.0,174.0,0.0,48.97
+rail507,best_bound,60.0,2,integer optimal solution,True,174.0,174.0,0.0,44.95
+rail507,best_bound,900.0,0,integer optimal solution,True,174.0,174.0,0.0,44.83
+rail507,best_bound,900.0,1,integer optimal solution,True,174.0,174.0,0.0,58.77
+rail507,best_bound,900.0,2,integer optimal solution,True,174.0,174.0,0.0,54.43
+rail507,best_estimate,10.0,0,time limit exceeded,True,175.0,174.0,0.005747126436781609,10.07
+rail507,best_estimate,10.0,1,time limit exceeded,True,175.0,174.0,0.005747126436781609,10.06
+rail507,best_estimate,10.0,2,time limit exceeded,True,175.0,174.0,0.005747126436781609,10.06
+rail507,best_estimate,300.0,0,integer optimal solution,True,174.0,174.0,0.0,130.49
+rail507,best_estimate,300.0,1,integer optimal solution,True,174.0,174.0,0.0,42.35
+rail507,best_estimate,300.0,2,integer optimal solution,True,174.0,174.0,0.0,67.7
+rail507,best_estimate,60.0,0,time limit exceeded,True,174.0,174.0,0.0,60.06
+rail507,best_estimate,60.0,1,integer optimal solution,True,174.0,174.0,0.0,38.55
+rail507,best_estimate,60.0,2,time limit exceeded,True,174.0,174.0,0.0,60.07
+rail507,best_estimate,900.0,0,integer optimal solution,True,174.0,174.0,0.0,120.52
+rail507,best_estimate,900.0,1,integer optimal solution,True,174.0,174.0,0.0,41.95
+rail507,best_estimate,900.0,2,integer optimal solution,True,174.0,174.0,0.0,78.87
+rail507,depth_first,10.0,0,time limit exceeded,True,176.0,174.0,0.011494252873563218,10.06
+rail507,depth_first,10.0,1,time limit exceeded,True,176.0,174.0,0.011494252873563218,10.06
+rail507,depth_first,10.0,2,time limit exceeded,True,175.0,174.0,0.005747126436781609,10.06
+rail507,depth_first,300.0,0,integer optimal solution,True,174.0,174.0,0.0,86.85
+rail507,depth_first,300.0,1,integer optimal solution,True,174.0,174.0,0.0,97.32
+rail507,depth_first,300.0,2,integer optimal solution,True,174.0,174.0,0.0,123.83
+rail507,depth_first,60.0,0,time limit exceeded,True,175.0,174.0,0.005747126436781609,60.06
+rail507,depth_first,60.0,1,time limit exceeded,True,175.0,174.0,0.005747126436781609,60.07
+rail507,depth_first,60.0,2,time limit exceeded,True,175.0,174.0,0.005747126436781609,60.07
+rail507,depth_first,900.0,0,integer optimal solution,True,174.0,174.0,0.0,85.53
+rail507,depth_first,900.0,1,integer optimal solution,True,174.0,174.0,0.0,83.83
+rail507,depth_first,900.0,2,integer optimal solution,True,174.0,174.0,0.0,131.61
+savsched1,auto,10.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.38
+savsched1,auto,10.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.37
+savsched1,auto,10.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.37
+savsched1,auto,300.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,300.35
+savsched1,auto,300.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,300.4
+savsched1,auto,300.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,300.44
+savsched1,auto,60.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.38
+savsched1,auto,60.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.38
+savsched1,auto,60.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.35
+savsched1,auto,900.0,0,time limit exceeded,True,3217.6999999999753,3217.7,-7.631648987745615e-15,900.49
+savsched1,auto,900.0,1,time limit exceeded,True,3217.699999989978,3217.7,-3.114560747998849e-12,900.49
+savsched1,auto,900.0,2,time limit exceeded,True,3219.6999999999753,3217.7,0.0006215619852613494,900.52
+savsched1,best_bound,10.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.37
+savsched1,best_bound,10.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.37
+savsched1,best_bound,10.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.37
+savsched1,best_bound,300.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,300.37
+savsched1,best_bound,300.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,300.46
+savsched1,best_bound,300.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,300.38
+savsched1,best_bound,60.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.38
+savsched1,best_bound,60.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.34
+savsched1,best_bound,60.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.34
+savsched1,best_bound,900.0,0,time limit exceeded,True,3217.6999999999753,3217.7,-7.631648987745615e-15,900.37
+savsched1,best_bound,900.0,1,time limit exceeded,True,3217.699999989978,3217.7,-3.114560747998849e-12,900.47
+savsched1,best_bound,900.0,2,time limit exceeded,True,3217.6999999999753,3217.7,-7.631648987745615e-15,900.52
+savsched1,best_estimate,10.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.37
+savsched1,best_estimate,10.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.34
+savsched1,best_estimate,10.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.34
+savsched1,best_estimate,300.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,300.44
+savsched1,best_estimate,300.0,1,time limit exceeded,True,5000.499999999967,3217.7,0.5540603536687595,300.33
+savsched1,best_estimate,300.0,2,time limit exceeded,True,5031.899999999969,3217.7,0.563818876837483,300.33
+savsched1,best_estimate,60.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.35
+savsched1,best_estimate,60.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.38
+savsched1,best_estimate,60.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.39
+savsched1,best_estimate,900.0,0,time limit exceeded,True,3217.6999999999753,3217.7,-7.631648987745615e-15,900.36
+savsched1,best_estimate,900.0,1,time limit exceeded,True,3217.699999989978,3217.7,-3.114560747998849e-12,900.33
+savsched1,best_estimate,900.0,2,time limit exceeded,True,3217.6999999999753,3217.7,-7.631648987745615e-15,900.45
+savsched1,depth_first,10.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.37
+savsched1,depth_first,10.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.34
+savsched1,depth_first,10.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,10.34
+savsched1,depth_first,300.0,0,time limit exceeded,True,4913.399999999969,3217.7,0.5269913292102959,300.44
+savsched1,depth_first,300.0,1,time limit exceeded,True,5000.499999999967,3217.7,0.5540603536687595,300.33
+savsched1,depth_first,300.0,2,time limit exceeded,True,5031.899999999969,3217.7,0.563818876837483,300.34
+savsched1,depth_first,60.0,0,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.34
+savsched1,depth_first,60.0,1,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.34
+savsched1,depth_first,60.0,2,time limit exceeded,True,366501.09999999596,3217.7,112.9015756596314,60.47
+savsched1,depth_first,900.0,0,time limit exceeded,True,3217.6999999999753,3217.7,-7.631648987745615e-15,900.37
+savsched1,depth_first,900.0,1,time limit exceeded,True,3218.6999999999753,3217.7,0.00031078099262685883,900.38
+savsched1,depth_first,900.0,2,time limit exceeded,True,3217.6999999999753,3217.7,-7.631648987745615e-15,900.42

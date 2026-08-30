@@ -1,0 +1,1 @@
+{"instance_name": "air05", "instance_file": "air05.mps.gz", "budget": 60.0, "seed": 1, "nodeselect": 0, "strategy": "auto", "status": "integer optimal solution", "has_solution": true, "incumbent_native": 26374.0, "incumbent_standardized": 26374.0, "wall_seconds": 10.6}

@@ -1,0 +1,1 @@
+{"instance_name": "rail01", "instance_file": "rail01.mps.gz", "budget": 900.0, "seed": 1, "nodeselect": 0, "strategy": "auto", "status": "integer optimal solution", "has_solution": true, "incumbent_native": -70.56996430000002, "incumbent_standardized": -70.56996430000002, "wall_seconds": 780.68}

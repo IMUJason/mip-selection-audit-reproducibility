@@ -1,0 +1,1 @@
+{"instance_name": "atlanta-ip", "instance_file": "atlanta-ip.mps.gz", "budget": 300.0, "seed": 0, "nodeselect": 1, "strategy": "depth_first", "status": "time limit exceeded", "has_solution": true, "incumbent_native": 92.00980470903977, "incumbent_standardized": 92.00980470903977, "wall_seconds": 300.03}

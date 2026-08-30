@@ -1,0 +1,1 @@
+{"instance_name": "csched008", "instance_file": "csched008.mps.gz", "budget": 900.0, "seed": 1, "nodeselect": 3, "strategy": "best_estimate", "status": "integer optimal solution", "has_solution": true, "incumbent_native": 173.0, "incumbent_standardized": 173.0, "wall_seconds": 229.32}

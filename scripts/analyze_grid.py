@@ -19,6 +19,7 @@ Deep-check invariants (any violation must be investigated before writing):
   I7 all benchmark instances are minimize (standardized == native)
 """
 from __future__ import annotations
+import os
 
 import json
 import re
@@ -31,7 +32,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "results" / "grid" / "results" / "raw"
 NATIVE = ROOT / "results" / "cplex_native"
 ANALYSIS = ROOT / "results" / "analysis"
-SOLU = Path("/Users/cjx-ms/Documents/我的坚果云/科研/论文/MIPLIB 2017 Dataset/miplib2017-v36.solu")
+SOLU = Path(os.environ.get("MIPLIB_SOLU", ROOT / "data" / "miplib2017-v36.solu"))
 
 DETERMINISTIC = {"best_bound", "depth_first", "best_estimate", "greedy_score", "hybrid_best_bound_depth"}
 STOCHASTIC = {"random_uniform", "boltzmann_adaptive"}
@@ -286,11 +287,27 @@ def main() -> None:
     for r in runs:
         if r["gap_vs_opt"] is None:
             continue
+        if r["policy"] == "learned_v2":
+            continue  # in-sample diagnostic of R6; excluded from the 12-policy main-grid oracle
         key = (r["instance"], r["budget"])
         by_ib.setdefault(key, {})
         by_ib[key].setdefault(r["policy"], []).append(r)
     for (instance, budget), policies in sorted(by_ib.items()):
         policy_means = {p: statistics.fmean(g["gap_vs_opt"] for g in gs) for p, gs in policies.items()}
+        # No-incumbent penalty, consistent with the policy_budget table: a policy
+        # with no feasible run in this cell is charged at the worst per-policy
+        # mean achieved in the cell. The oracle is attained by a feasible policy,
+        # so winner determination is unchanged; regret denominators now coincide
+        # with the penalized-gap table (identity: penalized_mean - mean_regret
+        # = oracle mean, per budget).
+        worst = max(policy_means.values())
+        ALL_POLICIES = [
+            "best_bound", "depth_first", "hybrid_best_bound_depth", "greedy_score",
+            "random_uniform", "best_estimate", "boltzmann_adaptive", "safeguarded_hybrid",
+            "budgeted_portfolio", "instance_aware_portfolio", "multi_feature_portfolio",
+            "learned_portfolio",
+        ]
+        penalized_means = {p: policy_means.get(p, worst) for p in ALL_POLICIES if p in policy_means or True}
         oracle_gap = min(policy_means.values())
         base_first = [
             "best_bound", "depth_first", "hybrid_best_bound_depth", "greedy_score",
@@ -300,7 +317,7 @@ def main() -> None:
         ]
         rank = {p: i for i, p in enumerate(base_first)}
         winner = min(policy_means, key=lambda p: (policy_means[p], rank.get(p, 99)))
-        for policy, mean_gap in policy_means.items():
+        for policy, mean_gap in penalized_means.items():
             regret_rows.append(
                 {
                     "instance": instance,
@@ -321,6 +338,20 @@ def main() -> None:
     win_rows = []
     for (instance, budget), policies in sorted(by_ib.items()):
         policy_means = {p: statistics.fmean(g["gap_vs_opt"] for g in gs) for p, gs in policies.items()}
+        # No-incumbent penalty, consistent with the policy_budget table: a policy
+        # with no feasible run in this cell is charged at the worst per-policy
+        # mean achieved in the cell. The oracle is attained by a feasible policy,
+        # so winner determination is unchanged; regret denominators now coincide
+        # with the penalized-gap table (identity: penalized_mean - mean_regret
+        # = oracle mean, per budget).
+        worst = max(policy_means.values())
+        ALL_POLICIES = [
+            "best_bound", "depth_first", "hybrid_best_bound_depth", "greedy_score",
+            "random_uniform", "best_estimate", "boltzmann_adaptive", "safeguarded_hybrid",
+            "budgeted_portfolio", "instance_aware_portfolio", "multi_feature_portfolio",
+            "learned_portfolio",
+        ]
+        penalized_means = {p: policy_means.get(p, worst) for p in ALL_POLICIES if p in policy_means or True}
         oracle_gap = min(policy_means.values())
         base_first = [
             "best_bound", "depth_first", "hybrid_best_bound_depth", "greedy_score",
