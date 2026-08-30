@@ -1,0 +1,194 @@
+[
+  {
+    "instance_name": "f2gap801600",
+    "filename": "f2gap801600.mps.gz",
+    "source_collection": "collection",
+    "size": 30868,
+    "int_vars": 1600,
+    "optimum": 86678.999982707
+  },
+  {
+    "instance_name": "app2-2",
+    "filename": "app2-2.mps.gz",
+    "source_collection": "collection",
+    "size": 34167,
+    "int_vars": 1226,
+    "optimum": 212040.3571429
+  },
+  {
+    "instance_name": "csched010",
+    "filename": "csched010.mps.gz",
+    "source_collection": "collection",
+    "size": 34653,
+    "int_vars": 1457,
+    "optimum": 407.999999999994
+  },
+  {
+    "instance_name": "beasleyC2",
+    "filename": "beasleyC2.mps.gz",
+    "source_collection": "collection",
+    "size": 34884,
+    "int_vars": 1250,
+    "optimum": 144.0
+  },
+  {
+    "instance_name": "beasleyC3",
+    "filename": "beasleyC3.mps.gz",
+    "source_collection": "benchmark",
+    "size": 35144,
+    "int_vars": 1250,
+    "optimum": 753.9999999999128
+  },
+  {
+    "instance_name": "neos2",
+    "filename": "neos2.mps.gz",
+    "source_collection": "collection",
+    "size": 35279,
+    "int_vars": 1040,
+    "optimum": 454.86469703
+  },
+  {
+    "instance_name": "p200x1188c",
+    "filename": "p200x1188c.mps.gz",
+    "source_collection": "benchmark",
+    "size": 36690,
+    "int_vars": 1188,
+    "optimum": 15078.0
+  },
+  {
+    "instance_name": "neos-4338804-snowy",
+    "filename": "neos-4338804-snowy.mps.gz",
+    "source_collection": "benchmark",
+    "size": 37835,
+    "int_vars": 1302,
+    "optimum": 1471.0
+  },
+  {
+    "instance_name": "50v-10",
+    "filename": "50v-10.mps.gz",
+    "source_collection": "benchmark",
+    "size": 37959,
+    "int_vars": 1647,
+    "optimum": 3311.1799841
+  },
+  {
+    "instance_name": "beasleyC1",
+    "filename": "beasleyC1.mps.gz",
+    "source_collection": "collection",
+    "size": 39166,
+    "int_vars": 1250,
+    "optimum": 84.99999999999999
+  },
+  {
+    "instance_name": "mc7",
+    "filename": "mc7.mps.gz",
+    "source_collection": "collection",
+    "size": 39555,
+    "int_vars": 1520,
+    "optimum": 3417.0
+  },
+  {
+    "instance_name": "mc8",
+    "filename": "mc8.mps.gz",
+    "source_collection": "collection",
+    "size": 39753,
+    "int_vars": 1520,
+    "optimum": 1566.0
+  },
+  {
+    "instance_name": "mc11",
+    "filename": "mc11.mps.gz",
+    "source_collection": "benchmark",
+    "size": 40584,
+    "int_vars": 1520,
+    "optimum": 11688.99999999966
+  },
+  {
+    "instance_name": "gmu-35-40",
+    "filename": "gmu-35-40.mps.gz",
+    "source_collection": "benchmark",
+    "size": 42251,
+    "int_vars": 1200,
+    "optimum": -2406733.3688
+  },
+  {
+    "instance_name": "haprp",
+    "filename": "haprp.mps.gz",
+    "source_collection": "collection",
+    "size": 42751,
+    "int_vars": 1828,
+    "optimum": 3673280.6808
+  },
+  {
+    "instance_name": "cvs08r139-94",
+    "filename": "cvs08r139-94.mps.gz",
+    "source_collection": "collection",
+    "size": 44265,
+    "int_vars": 1864,
+    "optimum": -116.0
+  },
+  {
+    "instance_name": "neos-3426085-ticino",
+    "filename": "neos-3426085-ticino.mps.gz",
+    "source_collection": "collection",
+    "size": 45906,
+    "int_vars": 4688,
+    "optimum": 225.0
+  },
+  {
+    "instance_name": "mod010",
+    "filename": "mod010.mps.gz",
+    "source_collection": "collection",
+    "size": 47465,
+    "int_vars": 2655,
+    "optimum": 6548.0
+  },
+  {
+    "instance_name": "10teams",
+    "filename": "10teams.mps.gz",
+    "source_collection": "collection",
+    "size": 47772,
+    "int_vars": 1800,
+    "optimum": 923.9999999999997
+  },
+  {
+    "instance_name": "lotsize",
+    "filename": "lotsize.mps.gz",
+    "source_collection": "benchmark",
+    "size": 48803,
+    "int_vars": 1195,
+    "optimum": 1480195.0
+  },
+  {
+    "instance_name": "aflow40b",
+    "filename": "aflow40b.mps.gz",
+    "source_collection": "collection",
+    "size": 52827,
+    "int_vars": 1364,
+    "optimum": 1168.0
+  },
+  {
+    "instance_name": "neos-1112787",
+    "filename": "neos-1112787.mps.gz",
+    "source_collection": "collection",
+    "size": 52890,
+    "int_vars": 1640,
+    "optimum": 564772773667.0
+  },
+  {
+    "instance_name": "cvs16r70-62",
+    "filename": "cvs16r70-62.mps.gz",
+    "source_collection": "collection",
+    "size": 53431,
+    "int_vars": 2112,
+    "optimum": -42.0
+  },
+  {
+    "instance_name": "railway_8_1_0",
+    "filename": "railway_8_1_0.mps.gz",
+    "source_collection": "collection",
+    "size": 54887,
+    "int_vars": 1177,
+    "optimum": 400.0
+  }
+]

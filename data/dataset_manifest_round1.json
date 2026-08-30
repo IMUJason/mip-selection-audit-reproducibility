@@ -1,0 +1,165 @@
+{
+  "manifest_version": "round1",
+  "items": [
+    {
+      "data_id": "DATA-001",
+      "group": "Transport-Core",
+      "instance_name": "air05",
+      "filename": "air05.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/air05.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "8e03d2b90834dc1fe15c908247fdd8baf76e208aa310508caa0734e5245692cc",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-002",
+      "group": "Transport-Core",
+      "instance_name": "atlanta-ip",
+      "filename": "atlanta-ip.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/atlanta-ip.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "99f599b2ed90a8d3af18f2d08ae0de9813cdb010f03cf03be9558bc27197fa19",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-003",
+      "group": "Transport-Core",
+      "instance_name": "drayage-25-23",
+      "filename": "drayage-25-23.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/drayage-25-23.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "207c00284a4edbe92f1cc11705e47f03156830a804fbaf748e19f7c84103e131",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-004",
+      "group": "Transport-Core",
+      "instance_name": "drayage-100-23",
+      "filename": "drayage-100-23.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/drayage-100-23.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "4a7040f86a34e90b9f97edf246fa0438d5b4233073ca4955a2399a69b398aeee",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-005",
+      "group": "Transport-Core",
+      "instance_name": "germanrr",
+      "filename": "germanrr.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/germanrr.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "e7609d88c8ef96f40be85069e39ee5f208a7980625badb4d3908cd4b7a0058fb",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-006",
+      "group": "Transport-Core",
+      "instance_name": "irp",
+      "filename": "irp.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/irp.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "c587a00599896816d3edf62c1bbed531c27000b635bcd0b9f913442a232792e7",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-007",
+      "group": "Transport-Core",
+      "instance_name": "rail01",
+      "filename": "rail01.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/rail01.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "e44f77b68588276a2c543ae18e64aef9aafda9a4b3c48b2c687b3bd260674c74",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-008",
+      "group": "Transport-Core",
+      "instance_name": "rail02",
+      "filename": "rail02.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/rail02.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "6b63d7eba78d4d189f82ffdd90fa709594ee8e8345f5154f7ff5e5f6d1cd511b",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-009",
+      "group": "Transport-Core",
+      "instance_name": "rail507",
+      "filename": "rail507.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/rail507.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "ecd62d6f0a76a9db236758a0d4ab9d4c0fa5b00ba59220c6b6073feff41ff39d",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-010",
+      "group": "Transport-Adjacent",
+      "instance_name": "academictimetablesmall",
+      "filename": "academictimetablesmall.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/academictimetablesmall.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "425392581ec5381493e76bbb6ef69d44fb7a827138e27a07586baaaa96daa922",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-011",
+      "group": "Transport-Adjacent",
+      "instance_name": "csched007",
+      "filename": "csched007.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/csched007.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "7d9ffe638f906498f432519c66db4570704070afdb88435a4bb75e5641f09973",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-012",
+      "group": "Transport-Adjacent",
+      "instance_name": "csched008",
+      "filename": "csched008.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/csched008.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "5b121b09142ea4cb9da7a7a355a738fc58195343e7cc53227aaeddd52cb8d9e7",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-013",
+      "group": "Transport-Adjacent",
+      "instance_name": "gfd-schedulen180f7d50m30k18",
+      "filename": "gfd-schedulen180f7d50m30k18.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/gfd-schedulen180f7d50m30k18.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "4a98fe1d8e019315a31f4bebbc242e2e196987fbf637400bd80ac4e5f74f8c76",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-014",
+      "group": "Transport-Adjacent",
+      "instance_name": "lectsched-5-obj",
+      "filename": "lectsched-5-obj.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/lectsched-5-obj.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "06c6c7494c888d94af105b257ca0f3c4f981becf0fd0f9b8ff8742814f9e7718",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-015",
+      "group": "Transport-Adjacent",
+      "instance_name": "mcsched",
+      "filename": "mcsched.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/mcsched.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "49deeb8c67d5ab6eec17c5e60019b93150773688271dc53510c31945dabed192",
+      "notes": "可直接读取，不应复制到项目根目录"
+    },
+    {
+      "data_id": "DATA-016",
+      "group": "Transport-Adjacent",
+      "instance_name": "savsched1",
+      "filename": "savsched1.mps.gz",
+      "source_path": "/Users/cjx-mbp/Documents/benchmark/savsched1.mps.gz",
+      "source_collection": "benchmark",
+      "sha256": "f0efcbafc3f0f91329a44c053c718a13c11812c30cb4a773eea7ee725e30b303",
+      "notes": "可直接读取，不应复制到项目根目录"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+ "model_type": "plan4_regret_tree_v1",
+ "feature_names": [
+  "time_limit_seconds",
+  "root_fractional_count",
+  "root_fractional_ratio",
+  "root_integer_variable_count",
+  "root_solve_seconds",
+  "root_integrality_gap_l1",
+  "root_binary_near_integral_ratio",
+  "root_binary_midpoint_ratio"
+ ],
+ "candidate_policies": [
+  "best_bound",
+  "depth_first",
+  "hybrid_best_bound_depth",
+  "greedy_score",
+  "random_uniform",
+  "best_estimate",
+  "boltzmann_adaptive",
+  "safeguarded_hybrid"
+ ],
+ "tree": {
+  "kind": "split",
+  "feature": "root_fractional_ratio",
+  "threshold": 0.15959183126688004,
+  "rows": 31,
+  "left": {
+   "kind": "leaf",
+   "policy": "best_bound",
+   "rows": 23
+  },
+  "right": {
+   "kind": "leaf",
+   "policy": "safeguarded_hybrid",
+   "rows": 8
+  }
+ }
+}

@@ -1,0 +1,839 @@
+{
+  "model_type": "plan4_regret_tree_v1",
+  "candidate_policies": [
+    "best_estimate",
+    "boltzmann_adaptive",
+    "safeguarded_hybrid"
+  ],
+  "feature_names": [
+    "time_limit_seconds",
+    "root_integrality_gap_l1",
+    "root_binary_near_integral_ratio",
+    "root_binary_midpoint_ratio"
+  ],
+  "max_depth": 2,
+  "min_samples_leaf": 1,
+  "complexity_penalty": 0.0,
+  "objective_value": 2.493024333056687,
+  "tree": {
+    "kind": "split",
+    "feature": "root_integrality_gap_l1",
+    "threshold": 0.017169393378192583,
+    "rows": 28,
+    "left": {
+      "kind": "split",
+      "feature": "root_integrality_gap_l1",
+      "threshold": 0.011565652072158391,
+      "rows": 22,
+      "left": {
+        "kind": "leaf",
+        "policy": "safeguarded_hybrid",
+        "rows": 16,
+        "avg_regret": 0.13699448140229117,
+        "policy_costs": {
+          "best_estimate": 6.304554872904577,
+          "boltzmann_adaptive": 6.2538706635251575,
+          "safeguarded_hybrid": 2.191911702436659
+        },
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "dataset_ids": [
+          "DATA-001",
+          "DATA-001",
+          "DATA-002",
+          "DATA-003",
+          "DATA-003",
+          "DATA-004",
+          "DATA-004",
+          "DATA-005",
+          "DATA-006",
+          "DATA-008",
+          "DATA-008",
+          "DATA-009",
+          "DATA-012",
+          "DATA-012",
+          "DATA-014",
+          "DATA-014"
+        ]
+      },
+      "right": {
+        "kind": "leaf",
+        "policy": "boltzmann_adaptive",
+        "rows": 6,
+        "avg_regret": 0.043336259942549964,
+        "policy_costs": {
+          "best_estimate": 2.129712378664262,
+          "boltzmann_adaptive": 0.26001755965529977,
+          "safeguarded_hybrid": 3.014125455196778
+        },
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "dataset_ids": [
+          "DATA-010",
+          "DATA-010",
+          "DATA-011",
+          "DATA-011",
+          "DATA-016",
+          "DATA-016"
+        ]
+      }
+    },
+    "right": {
+      "kind": "split",
+      "feature": "time_limit_seconds",
+      "threshold": 180.0,
+      "rows": 6,
+      "left": {
+        "kind": "leaf",
+        "policy": "safeguarded_hybrid",
+        "rows": 3,
+        "avg_regret": 0.0,
+        "policy_costs": {
+          "best_estimate": 1.4013460083253646,
+          "boltzmann_adaptive": 2.000098394246584,
+          "safeguarded_hybrid": 0.0
+        },
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "dataset_ids": [
+          "DATA-007",
+          "DATA-013",
+          "DATA-015"
+        ]
+      },
+      "right": {
+        "kind": "leaf",
+        "policy": "best_estimate",
+        "rows": 3,
+        "avg_regret": 0.013698356988242781,
+        "policy_costs": {
+          "best_estimate": 0.04109507096472834,
+          "boltzmann_adaptive": 1.9103974792059892,
+          "safeguarded_hybrid": 1.421782170841243
+        },
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "dataset_ids": [
+          "DATA-007",
+          "DATA-013",
+          "DATA-015"
+        ]
+      }
+    }
+  },
+  "training_summary": {
+    "rows": 28,
+    "split_count": 3,
+    "selector_average_regret": 0.08903658332345309,
+    "selector_total_regret": 2.4930243330566864,
+    "baseline_average_regrets": {
+      "best_estimate": 0.3527395832449619,
+      "boltzmann_adaptive": 0.37229943202260823,
+      "safeguarded_hybrid": 0.23670783315980998
+    },
+    "baseline_total_regrets": {
+      "best_estimate": 9.876708330858934,
+      "boltzmann_adaptive": 10.42438409663303,
+      "safeguarded_hybrid": 6.627819328474679
+    },
+    "assignments": [
+      {
+        "dataset_id": "DATA-001",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.6880139912705696,
+        "best_policies": [
+          "boltzmann_adaptive"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.00637672<0.0171694 -> root_integrality_gap_l1=0.00637672<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.006376719520583285,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 1.05,
+          "boltzmann_adaptive": 0.025284171621880038,
+          "safeguarded_hybrid": 0.6880139912705696
+        }
+      },
+      {
+        "dataset_id": "DATA-001",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.37269922488290436,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.00637672<0.0171694 -> root_integrality_gap_l1=0.00637672<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.006376719520583285,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 1.05,
+          "safeguarded_hybrid": 0.37269922488290436
+        }
+      },
+      {
+        "dataset_id": "DATA-002",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.5708279692542338,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.00706669<0.0171694 -> root_integrality_gap_l1=0.00706669<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.007066691242169241,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 1.0,
+          "safeguarded_hybrid": 0.5708279692542338
+        }
+      },
+      {
+        "dataset_id": "DATA-003",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.04521918077893661,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.00392785<0.0171694 -> root_integrality_gap_l1=0.00392785<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.003927850292687331,
+          "root_binary_near_integral_ratio": 0.986031746031746,
+          "root_binary_midpoint_ratio": 0.008072562358276645
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.05,
+          "safeguarded_hybrid": 0.04521918077893661
+        }
+      },
+      {
+        "dataset_id": "DATA-003",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.22258718450058085,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.00392785<0.0171694 -> root_integrality_gap_l1=0.00392785<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.003927850292687331,
+          "root_binary_near_integral_ratio": 0.986031746031746,
+          "root_binary_midpoint_ratio": 0.008072562358276645
+        },
+        "policy_regrets": {
+          "best_estimate": 0.05,
+          "boltzmann_adaptive": 1.0170325212884423,
+          "safeguarded_hybrid": 0.22258718450058085
+        }
+      },
+      {
+        "dataset_id": "DATA-004",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.029593852307040692,
+        "best_policies": [
+          "boltzmann_adaptive"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.0041878<0.0171694 -> root_integrality_gap_l1=0.0041878<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.004187801444205744,
+          "root_binary_near_integral_ratio": 0.985578231292517,
+          "root_binary_midpoint_ratio": 0.00798185941043084
+        },
+        "policy_regrets": {
+          "best_estimate": 0.05,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.029593852307040692
+        }
+      },
+      {
+        "dataset_id": "DATA-004",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.05,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.0041878<0.0171694 -> root_integrality_gap_l1=0.0041878<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.004187801444205744,
+          "root_binary_near_integral_ratio": 0.985578231292517,
+          "root_binary_midpoint_ratio": 0.00798185941043084
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.002377264948756076,
+          "safeguarded_hybrid": 0.05
+        }
+      },
+      {
+        "dataset_id": "DATA-005",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.10920673079575065,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.00532624<0.0171694 -> root_integrality_gap_l1=0.00532624<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.005326243329837049,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 1.0,
+          "safeguarded_hybrid": 0.10920673079575065
+        }
+      },
+      {
+        "dataset_id": "DATA-006",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.000295348<0.0171694 -> root_integrality_gap_l1=0.000295348<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.00029534826482894406,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 1.011610736488795,
+          "boltzmann_adaptive": 0.059176705666079035,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-007",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.0205755>=0.0171694 -> time_limit_seconds=60<180 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.02057552914567498,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 1.0,
+          "boltzmann_adaptive": 1.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-007",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "best_estimate",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.0205755>=0.0171694 -> time_limit_seconds=300>=180 -> policy=best_estimate",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.02057552914567498,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.8603974792059892,
+          "safeguarded_hybrid": 1.0
+        }
+      },
+      {
+        "dataset_id": "DATA-008",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "no_signal",
+        "reason": "root_integrality_gap_l1=0.00892878<0.0171694 -> root_integrality_gap_l1=0.00892878<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.008928781071292776,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-008",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "no_signal",
+        "reason": "root_integrality_gap_l1=0.00892878<0.0171694 -> root_integrality_gap_l1=0.00892878<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.008928781071292776,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-009",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.003763568646642023,
+        "best_policies": [
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.00101249<0.0171694 -> root_integrality_gap_l1=0.00101249<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.0010124875624732861,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.14294413641578202,
+          "boltzmann_adaptive": 1.05,
+          "safeguarded_hybrid": 0.003763568646642023
+        }
+      },
+      {
+        "dataset_id": "DATA-010",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "boltzmann_adaptive",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.0116056<0.0171694 -> root_integrality_gap_l1=0.0116056>=0.0115657 -> policy=boltzmann_adaptive",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.011605613789267732,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-010",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "boltzmann_adaptive",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.0116056<0.0171694 -> root_integrality_gap_l1=0.0116056>=0.0115657 -> policy=boltzmann_adaptive",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.011605613789267732,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-011",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "boltzmann_adaptive",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "boltzmann_adaptive"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.015227<0.0171694 -> root_integrality_gap_l1=0.015227>=0.0115657 -> policy=boltzmann_adaptive",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.0152269830375527,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.6303717009810699,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 1.0
+        }
+      },
+      {
+        "dataset_id": "DATA-011",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "boltzmann_adaptive",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "boltzmann_adaptive"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.015227<0.0171694 -> root_integrality_gap_l1=0.015227>=0.0115657 -> policy=boltzmann_adaptive",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.0152269830375527,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.44934067768319225,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 1.0
+        }
+      },
+      {
+        "dataset_id": "DATA-012",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.05,
+        "best_policies": [
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.0115257<0.0171694 -> root_integrality_gap_l1=0.0115257<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.01152569035504905,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 2.0,
+          "boltzmann_adaptive": 1.0,
+          "safeguarded_hybrid": 0.05
+        }
+      },
+      {
+        "dataset_id": "DATA-012",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.05,
+        "best_policies": [
+          "boltzmann_adaptive"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.0115257<0.0171694 -> root_integrality_gap_l1=0.0115257<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.01152569035504905,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 2.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.05
+        }
+      },
+      {
+        "dataset_id": "DATA-013",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.0191118>=0.0171694 -> time_limit_seconds=60<180 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.019111803718832466,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-013",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "best_estimate",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.0191118>=0.0171694 -> time_limit_seconds=300>=180 -> policy=best_estimate",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.019111803718832466,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-014",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.00423621<0.0171694 -> root_integrality_gap_l1=0.00423621<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.004236205207312752,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-014",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "best_estimate",
+          "boltzmann_adaptive",
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "best_bound_only",
+        "reason": "root_integrality_gap_l1=0.00423621<0.0171694 -> root_integrality_gap_l1=0.00423621<0.0115657 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.004236205207312752,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.0,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-015",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "safeguarded_hybrid",
+        "predicted_regret": 0.0,
+        "best_policies": [
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.194969>=0.0171694 -> time_limit_seconds=60<180 -> policy=safeguarded_hybrid",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.1949694299713344,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.4013460083253647,
+          "boltzmann_adaptive": 1.000098394246584,
+          "safeguarded_hybrid": 0.0
+        }
+      },
+      {
+        "dataset_id": "DATA-015",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "best_estimate",
+        "predicted_regret": 0.04109507096472834,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.194969>=0.0171694 -> time_limit_seconds=300>=180 -> policy=best_estimate",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.1949694299713344,
+          "root_binary_near_integral_ratio": 0.0,
+          "root_binary_midpoint_ratio": 0.0
+        },
+        "policy_regrets": {
+          "best_estimate": 0.04109507096472834,
+          "boltzmann_adaptive": 1.05,
+          "safeguarded_hybrid": 0.421782170841243
+        }
+      },
+      {
+        "dataset_id": "DATA-016",
+        "time_limit_seconds": 60.0,
+        "predicted_policy": "boltzmann_adaptive",
+        "predicted_regret": 0.15190156161542082,
+        "best_policies": [
+          "best_estimate"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.012674<0.0171694 -> root_integrality_gap_l1=0.012674>=0.0115657 -> policy=boltzmann_adaptive",
+        "feature_values": {
+          "time_limit_seconds": 60.0,
+          "root_integrality_gap_l1": 0.012673955910539473,
+          "root_binary_near_integral_ratio": 0.9680846433559793,
+          "root_binary_midpoint_ratio": 0.028271165784965042
+        },
+        "policy_regrets": {
+          "best_estimate": 0.0,
+          "boltzmann_adaptive": 0.15190156161542082,
+          "safeguarded_hybrid": 1.0141254551967778
+        }
+      },
+      {
+        "dataset_id": "DATA-016",
+        "time_limit_seconds": 300.0,
+        "predicted_policy": "boltzmann_adaptive",
+        "predicted_regret": 0.10811599803987895,
+        "best_policies": [
+          "safeguarded_hybrid"
+        ],
+        "metric_basis": "final_gap+time_to_first_feasible",
+        "reason": "root_integrality_gap_l1=0.012674<0.0171694 -> root_integrality_gap_l1=0.012674>=0.0115657 -> policy=boltzmann_adaptive",
+        "feature_values": {
+          "time_limit_seconds": 300.0,
+          "root_integrality_gap_l1": 0.012673955910539473,
+          "root_binary_near_integral_ratio": 0.9680846433559793,
+          "root_binary_midpoint_ratio": 0.028271165784965042
+        },
+        "policy_regrets": {
+          "best_estimate": 1.05,
+          "boltzmann_adaptive": 0.10811599803987895,
+          "safeguarded_hybrid": 0.0
+        }
+      }
+    ]
+  },
+  "training_artifacts": {
+    "feature_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/work/root_features_round27_transport_all_lp_proxy.json",
+    "summary_paths": [
+      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round8_postfix_baseline_60s_summary.json",
+      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round25_train_extension_60s_summary.json",
+      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round21_holdout_direct_60s_summary.json",
+      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round11_positive_300s_summary.json",
+      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round25_train_extension_300s_summary.json",
+      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_adjacent_extension_60s_summary.json",
+      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_adjacent_extension_300s_summary.json"
+    ],
+    "candidate_policies": [
+      "best_estimate",
+      "boltzmann_adaptive",
+      "safeguarded_hybrid"
+    ],
+    "feature_names": [
+      "time_limit_seconds",
+      "root_integrality_gap_l1",
+      "root_binary_near_integral_ratio",
+      "root_binary_midpoint_ratio"
+    ],
+    "time_weight": 0.05,
+    "core_datasets": [
+      "DATA-001",
+      "DATA-002",
+      "DATA-003",
+      "DATA-004",
+      "DATA-005",
+      "DATA-006",
+      "DATA-007",
+      "DATA-008",
+      "DATA-009"
+    ],
+    "adjacent_datasets": [
+      "DATA-010",
+      "DATA-011",
+      "DATA-012",
+      "DATA-013",
+      "DATA-014",
+      "DATA-015",
+      "DATA-016"
+    ]
+  },
+  "round27_lodo_selection": {
+    "name": "binary_only",
+    "max_depth": 2,
+    "complexity_penalty": 0.0,
+    "cv_average_regret": 0.18990070630479103,
+    "split_count": 3,
+    "core_to_adjacent_average_regret": 0.4003258002746213,
+    "adjacent_to_core_average_regret": 0.14942226445976134
+  }
+}
