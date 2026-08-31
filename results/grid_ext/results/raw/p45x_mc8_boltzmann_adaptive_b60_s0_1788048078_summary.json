@@ -1,7 +1,7 @@
 {
   "run_id": "p45x_mc8_boltzmann_adaptive_b60_s0_1788048078",
   "status": "node_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/mc8.mps.gz",
+  "instance_path": "data/instances/mc8.mps.gz",
   "policy": "boltzmann_adaptive",
   "resolved_policy": "boltzmann_adaptive",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 20.364736542047467,
   "beta_initial": 1.0,
   "beta_final": 0.1,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/results/raw/p45x_mc8_boltzmann_adaptive_b60_s0_1788048078_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_mc8_boltzmann_adaptive_b60_s0_1788048078_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_mc8_boltzmann_adaptive_b60_s0_1788048078_manifest.json"
+  "summary_path": "results/grid_ext/results/raw/p45x_mc8_boltzmann_adaptive_b60_s0_1788048078_summary.json",
+  "trace_path": "results/grid_ext/logs/runs/p45x_mc8_boltzmann_adaptive_b60_s0_1788048078_trace.jsonl",
+  "manifest_path": "results/grid_ext/logs/runs/p45x_mc8_boltzmann_adaptive_b60_s0_1788048078_manifest.json"
 }

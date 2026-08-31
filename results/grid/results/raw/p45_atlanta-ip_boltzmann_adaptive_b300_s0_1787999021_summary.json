@@ -1,7 +1,7 @@
 {
   "run_id": "p45_atlanta-ip_boltzmann_adaptive_b300_s0_1787999021",
   "status": "time_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/atlanta-ip.mps.gz",
+  "instance_path": "data/instances/atlanta-ip.mps.gz",
   "policy": "boltzmann_adaptive",
   "resolved_policy": "boltzmann_adaptive",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 300.01660816697404,
   "beta_initial": 1.0,
   "beta_final": 0.1,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/results/raw/p45_atlanta-ip_boltzmann_adaptive_b300_s0_1787999021_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_atlanta-ip_boltzmann_adaptive_b300_s0_1787999021_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_atlanta-ip_boltzmann_adaptive_b300_s0_1787999021_manifest.json"
+  "summary_path": "results/grid/results/raw/p45_atlanta-ip_boltzmann_adaptive_b300_s0_1787999021_summary.json",
+  "trace_path": "results/grid/logs/runs/p45_atlanta-ip_boltzmann_adaptive_b300_s0_1787999021_trace.jsonl",
+  "manifest_path": "results/grid/logs/runs/p45_atlanta-ip_boltzmann_adaptive_b300_s0_1787999021_manifest.json"
 }

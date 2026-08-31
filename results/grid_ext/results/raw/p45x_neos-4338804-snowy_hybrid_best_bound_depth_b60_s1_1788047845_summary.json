@@ -1,7 +1,7 @@
 {
   "run_id": "p45x_neos-4338804-snowy_hybrid_best_bound_depth_b60_s1_1788047845",
   "status": "node_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/neos-4338804-snowy.mps.gz",
+  "instance_path": "data/instances/neos-4338804-snowy.mps.gz",
   "policy": "hybrid_best_bound_depth",
   "resolved_policy": "hybrid_best_bound_depth",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 19.67196549999062,
   "beta_initial": 1.0,
   "beta_final": 1.0,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/results/raw/p45x_neos-4338804-snowy_hybrid_best_bound_depth_b60_s1_1788047845_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_neos-4338804-snowy_hybrid_best_bound_depth_b60_s1_1788047845_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_neos-4338804-snowy_hybrid_best_bound_depth_b60_s1_1788047845_manifest.json"
+  "summary_path": "results/grid_ext/results/raw/p45x_neos-4338804-snowy_hybrid_best_bound_depth_b60_s1_1788047845_summary.json",
+  "trace_path": "results/grid_ext/logs/runs/p45x_neos-4338804-snowy_hybrid_best_bound_depth_b60_s1_1788047845_trace.jsonl",
+  "manifest_path": "results/grid_ext/logs/runs/p45x_neos-4338804-snowy_hybrid_best_bound_depth_b60_s1_1788047845_manifest.json"
 }

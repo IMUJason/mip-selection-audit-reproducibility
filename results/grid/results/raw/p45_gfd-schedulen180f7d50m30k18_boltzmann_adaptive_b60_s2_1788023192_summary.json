@@ -1,7 +1,7 @@
 {
   "run_id": "p45_gfd-schedulen180f7d50m30k18_boltzmann_adaptive_b60_s2_1788023192",
   "status": "time_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/gfd-schedulen180f7d50m30k18.mps.gz",
+  "instance_path": "data/instances/gfd-schedulen180f7d50m30k18.mps.gz",
   "policy": "boltzmann_adaptive",
   "resolved_policy": "boltzmann_adaptive",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 844.7566731249681,
   "beta_initial": 1.0,
   "beta_final": 1.0,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/results/raw/p45_gfd-schedulen180f7d50m30k18_boltzmann_adaptive_b60_s2_1788023192_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_gfd-schedulen180f7d50m30k18_boltzmann_adaptive_b60_s2_1788023192_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_gfd-schedulen180f7d50m30k18_boltzmann_adaptive_b60_s2_1788023192_manifest.json"
+  "summary_path": "results/grid/results/raw/p45_gfd-schedulen180f7d50m30k18_boltzmann_adaptive_b60_s2_1788023192_summary.json",
+  "trace_path": "results/grid/logs/runs/p45_gfd-schedulen180f7d50m30k18_boltzmann_adaptive_b60_s2_1788023192_trace.jsonl",
+  "manifest_path": "results/grid/logs/runs/p45_gfd-schedulen180f7d50m30k18_boltzmann_adaptive_b60_s2_1788023192_manifest.json"
 }

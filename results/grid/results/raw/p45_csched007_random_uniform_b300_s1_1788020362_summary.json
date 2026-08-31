@@ -1,7 +1,7 @@
 {
   "run_id": "p45_csched007_random_uniform_b300_s1_1788020362",
   "status": "node_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/csched007.mps.gz",
+  "instance_path": "data/instances/csched007.mps.gz",
   "policy": "random_uniform",
   "resolved_policy": "random_uniform",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 26.13350504101254,
   "beta_initial": 1.0,
   "beta_final": 1.0,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/results/raw/p45_csched007_random_uniform_b300_s1_1788020362_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_csched007_random_uniform_b300_s1_1788020362_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_csched007_random_uniform_b300_s1_1788020362_manifest.json"
+  "summary_path": "results/grid/results/raw/p45_csched007_random_uniform_b300_s1_1788020362_summary.json",
+  "trace_path": "results/grid/logs/runs/p45_csched007_random_uniform_b300_s1_1788020362_trace.jsonl",
+  "manifest_path": "results/grid/logs/runs/p45_csched007_random_uniform_b300_s1_1788020362_manifest.json"
 }

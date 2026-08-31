@@ -53,10 +53,12 @@ def _silence(model: "cplex.Cplex") -> "cplex.Cplex":
 
 
 class CplexRelaxationAdapter:
-    def __init__(self, instance_path: str | Path, threads: int, seed: int) -> None:
+    def __init__(self, instance_path: str | Path, threads: int, seed: int,
+                 time_basis: str = "wall") -> None:
         self.instance_path = Path(instance_path)
         self._threads = threads
         self._seed = seed
+        self._time_basis = time_basis
 
         source = self._prepare_readable_instance(self.instance_path)
         self.original_model = _silence(cplex.Cplex())
@@ -146,6 +148,8 @@ class CplexRelaxationAdapter:
         _silence(model)
         model.parameters.threads.set(1)
         model.parameters.timelimit.set(max(time_limit_seconds, 1e-3))
+        if getattr(self, "_time_basis", "wall") == "cpu":
+            model.parameters.clocktype.set(2)
         try:
             model.parameters.emphasis.mip.set(1)
             model.parameters.mip.strategy.heuristiceffort.set(0.8)
@@ -1114,6 +1118,8 @@ class CplexRelaxationAdapter:
 
         if time_limit_seconds is not None:
             self._lp.parameters.timelimit.set(max(time_limit_seconds, 1e-3))
+            if getattr(self, "_time_basis", "wall") == "cpu":
+                self._lp.parameters.clocktype.set(2)
         try:
             self._lp.solve()
         except CplexError as exc:

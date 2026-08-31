@@ -2,75 +2,75 @@
   "shards": [
     {
       "shard_id": 1,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_01.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_01.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_01.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_01.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_01.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_01.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_01.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_01.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_01.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_01.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_01.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_01/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_01.log"
     },
     {
       "shard_id": 2,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_02.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_02.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_02.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_02.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_02.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_02.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_02.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_02.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_02.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_02.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_02.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_02/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_02.log"
     },
     {
       "shard_id": 3,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_03.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_03.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_03.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_03.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_03.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_03.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_03.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_03.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_03.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_03.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_03.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_03/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_03.log"
     },
     {
       "shard_id": 4,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_04.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_04.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_04.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_04.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_04.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_04.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_04.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_04.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_04.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_04.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_04.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_04/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_04.log"
     },
     {
       "shard_id": 5,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_05.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_05.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_05.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_05.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_05.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_05.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_05.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_05.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_05.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_05.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_05.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_05/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_05.log"
     },
     {
       "shard_id": 6,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_06.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_06.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_06.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_06.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_06.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_06.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_06.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_06.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_06.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_06.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_06.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_06/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_06.log"
     },
     {
       "shard_id": 7,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_07.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_07.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_07.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_07.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_07.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_07.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_07.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_07.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_07.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_07.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_07.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_07/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_07.log"
     },
     {
       "shard_id": 8,
-      "manifest_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_08.csv",
-      "output_jsonl": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_08.jsonl",
-      "run_registry": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_08.csv",
-      "cutsel_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_08.jsonl",
-      "stdout_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_08.log",
-      "stderr_log": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 5/results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_08.log"
+      "manifest_path": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_manifest_shard_08.csv",
+      "output_jsonl": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_results_shard_08.jsonl",
+      "run_registry": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_run_registry_shard_08.csv",
+      "cutsel_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_rounds_shard_08.jsonl",
+      "stdout_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_stdout_shard_08.log",
+      "stderr_log": "results/external_unseen_dev120_raise_portfolio_ud_v1/shard_08/external_unseen_dev120_raise_portfolio_ud_v1_stderr_shard_08.log"
     }
   ],
   "modes": [

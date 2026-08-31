@@ -1,7 +1,7 @@
 {
   "run_id": "p45x_f2gap801600_best_bound_b300_s1_1788047546",
   "status": "node_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/f2gap801600.mps.gz",
+  "instance_path": "data/instances/f2gap801600.mps.gz",
   "policy": "best_bound",
   "resolved_policy": "best_bound",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 8.19065624999348,
   "beta_initial": 1.0,
   "beta_final": 1.0,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/results/raw/p45x_f2gap801600_best_bound_b300_s1_1788047546_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_f2gap801600_best_bound_b300_s1_1788047546_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_f2gap801600_best_bound_b300_s1_1788047546_manifest.json"
+  "summary_path": "results/grid_ext/results/raw/p45x_f2gap801600_best_bound_b300_s1_1788047546_summary.json",
+  "trace_path": "results/grid_ext/logs/runs/p45x_f2gap801600_best_bound_b300_s1_1788047546_trace.jsonl",
+  "manifest_path": "results/grid_ext/logs/runs/p45x_f2gap801600_best_bound_b300_s1_1788047546_manifest.json"
 }

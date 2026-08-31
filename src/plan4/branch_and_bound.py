@@ -3,6 +3,13 @@ from __future__ import annotations
 import json
 import math
 import time
+
+# Switchable process clock: wall (default) or CPU time for robustness runs.
+_CLOCK = {"fn": time.monotonic}
+
+
+def _now() -> float:
+    return _CLOCK["fn"]()
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
@@ -108,11 +115,13 @@ class BranchAndBoundConfig:
     score_config: ScoreConfig = field(default_factory=ScoreConfig)
     beta_config: BetaConfig = field(default_factory=BetaConfig)
     solver_backend: str = "cplex"
+    time_basis: str = "wall"  # "wall" | "cpu" (robustness runs)
 
     def to_dict(self) -> dict[str, Any]:
         payload = asdict(self)
         payload["score_config"] = self.score_config.to_dict()
         payload["beta_config"] = self.beta_config.to_dict()
+        payload["time_basis"] = self.time_basis
         return payload
 
 
@@ -951,14 +960,14 @@ class GurobiRelaxationAdapter:
         )
         if diving_allowed or lp_guided_allowed or rins_allowed or local_branching_allowed:
             plain_budget = max(min(time_limit_seconds * 0.5, 0.04), min(time_limit_seconds, 0.02))
-        plain_start = time.monotonic()
+        plain_start = _now()
         plain_obj, plain_solution = self._solve_plain_heuristic(
             node,
             plain_budget,
             incumbent_objective,
             incumbent_solution,
         )
-        plain_elapsed = time.monotonic() - plain_start
+        plain_elapsed = _now() - plain_start
         remaining = max(time_limit_seconds - plain_elapsed, 0.0)
 
         plain_improved_incumbent = (
@@ -971,7 +980,7 @@ class GurobiRelaxationAdapter:
             return plain_obj, plain_solution, ("plain" if plain_obj is not None else None)
 
         if diving_allowed and remaining >= 1e-2:
-            dive_start = time.monotonic()
+            dive_start = _now()
             diving_obj, diving_solution = self._solve_incumbent_diving_heuristic(
                 node,
                 remaining,
@@ -980,7 +989,7 @@ class GurobiRelaxationAdapter:
                 diving_free_integer_vars,
                 diving_stage_factor,
             )
-            dive_elapsed = time.monotonic() - dive_start
+            dive_elapsed = _now() - dive_start
             if diving_obj is not None and (plain_obj is None or diving_obj <= plain_obj + 1e-9):
                 return diving_obj, diving_solution, "incumbent_diving"
             remaining = max(remaining - dive_elapsed, 0.0)
@@ -988,7 +997,7 @@ class GurobiRelaxationAdapter:
                 return plain_obj, plain_solution, ("plain" if plain_obj is not None else None)
 
         if lp_guided_allowed and remaining >= 1e-2:
-            lp_guided_start = time.monotonic()
+            lp_guided_start = _now()
             lp_guided_obj, lp_guided_solution = self._solve_lp_guided_diving_heuristic(
                 node,
                 remaining,
@@ -998,7 +1007,7 @@ class GurobiRelaxationAdapter:
                 lp_guided_stage_factor,
                 lp_guided_integral_tolerance,
             )
-            lp_guided_elapsed = time.monotonic() - lp_guided_start
+            lp_guided_elapsed = _now() - lp_guided_start
             if lp_guided_obj is not None and (plain_obj is None or lp_guided_obj <= plain_obj + 1e-9):
                 return lp_guided_obj, lp_guided_solution, "lp_guided_diving"
             remaining = max(remaining - lp_guided_elapsed, 0.0)
@@ -1006,7 +1015,7 @@ class GurobiRelaxationAdapter:
                 return plain_obj, plain_solution, ("plain" if plain_obj is not None else None)
 
         if rins_allowed and remaining >= 1e-2:
-            rins_start = time.monotonic()
+            rins_start = _now()
             rins_obj, rins_solution = self._solve_rins_like_heuristic(
                 node,
                 remaining,
@@ -1016,7 +1025,7 @@ class GurobiRelaxationAdapter:
                 rins_min_agreement_vars,
                 rins_integral_tolerance,
             )
-            rins_elapsed = time.monotonic() - rins_start
+            rins_elapsed = _now() - rins_start
             if rins_obj is not None and (plain_obj is None or rins_obj <= plain_obj + 1e-9):
                 return rins_obj, rins_solution, "rins_like"
             remaining = max(remaining - rins_elapsed, 0.0)
@@ -1024,7 +1033,7 @@ class GurobiRelaxationAdapter:
                 return plain_obj, plain_solution, ("plain" if plain_obj is not None else None)
 
         if local_branching_allowed and remaining >= 1e-2:
-            lb_start = time.monotonic()
+            lb_start = _now()
             local_obj, local_solution = self._solve_local_branching_heuristic(
                 node,
                 remaining,
@@ -1033,7 +1042,7 @@ class GurobiRelaxationAdapter:
                 local_branching_max_binary_vars,
                 incumbent_objective,
             )
-            lb_elapsed = time.monotonic() - lb_start
+            lb_elapsed = _now() - lb_start
             if local_obj is not None and (plain_obj is None or local_obj <= plain_obj + 1e-9):
                 return local_obj, local_solution, "local_branching"
             remaining = max(remaining - lb_elapsed, 0.0)
@@ -1099,7 +1108,7 @@ class GurobiRelaxationAdapter:
         node.fractional_variables = fractional
         node.status = "integral" if not fractional else "fractional"
         if lp_proxy_mode != "skip":
-            proxy_start = time.monotonic()
+            proxy_start = _now()
             node.lp_proxy_metrics = self._compute_lp_proxy_metrics(
                 model,
                 node,
@@ -1107,7 +1116,7 @@ class GurobiRelaxationAdapter:
                 lp_proxy_mode=lp_proxy_mode,
                 constraint_sample_limit=lp_proxy_constraint_sample_limit,
             )
-            node.lp_proxy_metrics["root_lp_proxy_elapsed_seconds"] = time.monotonic() - proxy_start
+            node.lp_proxy_metrics["root_lp_proxy_elapsed_seconds"] = _now() - proxy_start
         else:
             node.lp_proxy_metrics = {
                 "root_lp_proxy_mode": "skip",
@@ -1211,7 +1220,10 @@ class BranchAndBoundEngine:
                 raise RuntimeError("solver_backend='gurobi' requested but gurobipy is not installed")
             self.adapter = GurobiRelaxationAdapter(config.instance_path, config.threads, config.random_seed)
         elif config.solver_backend == "cplex":
-            self.adapter = CplexRelaxationAdapter(config.instance_path, config.threads, config.random_seed)
+            self.adapter = CplexRelaxationAdapter(
+                config.instance_path, config.threads, config.random_seed,
+                time_basis=config.time_basis,
+            )
         else:
             raise ValueError(f"Unsupported solver_backend: {config.solver_backend}")
         self.root_fractional_count: int | None = None
@@ -1431,7 +1443,7 @@ class BranchAndBoundEngine:
         if self.config.policy == "learned_portfolio" and not probe_features_required:
             return
 
-        probe_start = time.monotonic()
+        probe_start = _now()
         objective, _, backend = self.adapter.heuristic_incumbent(
             root,
             time_limit_seconds=self.config.root_primal_probe_time_limit_seconds,
@@ -1445,7 +1457,7 @@ class BranchAndBoundEngine:
             plain_enabled=self.config.root_primal_probe_plain_enabled,
         )
         self.root_primal_probe_features_observed = True
-        self.root_primal_probe_elapsed_seconds = time.monotonic() - probe_start
+        self.root_primal_probe_elapsed_seconds = _now() - probe_start
         self.root_primal_probe_objective = objective
         self.root_primal_probe_backend = backend
         if objective is not None:
@@ -1472,7 +1484,12 @@ class BranchAndBoundEngine:
         run_id = f"{self.config.run_tag}_{int(time.time())}"
         paths = ensure_run_paths(run_id, self.config.output_root)
         instance_hash = sha256_file(self.config.instance_path)
-        start = time.monotonic()
+        _CLOCK["fn"] = (
+            time.process_time
+            if self.config.time_basis == "cpu"
+            else time.monotonic
+        )
+        start = _now()
         trace_handle = paths.trace_path.open("w", encoding="utf-8")
 
         try:
@@ -1488,7 +1505,7 @@ class BranchAndBoundEngine:
             status = "unknown"
 
             root = NodeState(node_id="n0", parent_id=None, depth=0, created_step=0)
-            root_start = time.monotonic()
+            root_start = _now()
             root_lp_proxy_mode = self._resolve_root_lp_proxy_mode()
             root = self.adapter.solve_node(
                 root,
@@ -1496,7 +1513,7 @@ class BranchAndBoundEngine:
                 lp_proxy_mode=root_lp_proxy_mode,
                 lp_proxy_constraint_sample_limit=self.config.root_lp_proxy_constraint_sample_limit,
             )
-            self.root_solve_seconds = time.monotonic() - root_start
+            self.root_solve_seconds = _now() - root_start
             self._update_root_metrics(root)
             self._run_root_primal_probe(root)
             nodes_evaluated += 1
@@ -1567,7 +1584,7 @@ class BranchAndBoundEngine:
 
             step = 0
             while active_nodes:
-                elapsed = time.monotonic() - start
+                elapsed = _now() - start
                 if elapsed >= self.config.time_limit_seconds:
                     status = "time_limit"
                     break
@@ -1677,7 +1694,7 @@ class BranchAndBoundEngine:
                             heuristic_budget = max(heuristic_budget, self.config.heuristic_rins_time_limit_seconds)
                         heuristic_time = min(
                             heuristic_budget,
-                            max(self.config.time_limit_seconds - (time.monotonic() - start), 1e-3),
+                            max(self.config.time_limit_seconds - (_now() - start), 1e-3),
                         )
                         heuristic_obj, heuristic_solution, heuristic_backend = self.adapter.heuristic_incumbent(
                             node,
@@ -1716,13 +1733,13 @@ class BranchAndBoundEngine:
                             active_nodes, pruned_nodes = self._prune_active_nodes(active_nodes, incumbent_objective)
                             global_pruned_nodes += pruned_nodes
                             if time_to_first_feasible is None:
-                                time_to_first_feasible = time.monotonic() - start
+                                time_to_first_feasible = _now() - start
 
                     children = self.adapter.branch(node, step, node_counter)
                     node_counter += len(children)
                     solved_children: list[NodeState] = []
                     for child in children:
-                        remaining = max(self.config.time_limit_seconds - (time.monotonic() - start), 1e-3)
+                        remaining = max(self.config.time_limit_seconds - (_now() - start), 1e-3)
                         child = self.adapter.solve_node(child, time_limit_seconds=remaining)
                         solved_children.append(child)
                         nodes_evaluated += 1
@@ -1738,7 +1755,7 @@ class BranchAndBoundEngine:
                                 active_nodes, pruned_nodes = self._prune_active_nodes(active_nodes, incumbent_objective)
                                 global_pruned_nodes += pruned_nodes
                                 if time_to_first_feasible is None:
-                                    time_to_first_feasible = time.monotonic() - start
+                                    time_to_first_feasible = _now() - start
                             continue
                         if incumbent_objective is not None and child.lp_objective is not None and child.lp_objective >= incumbent_objective - 1e-9:
                             continue
@@ -1835,7 +1852,7 @@ class BranchAndBoundEngine:
                 if not active_nodes:
                     status = "optimal" if incumbent_objective is not None else "infeasible"
 
-            elapsed = time.monotonic() - start
+            elapsed = _now() - start
             active_nodes, _ = self._prune_active_nodes(active_nodes, incumbent_objective)
             best_bound = max((node.lp_objective for node in active_nodes if node.lp_objective is not None), default=incumbent_objective)
             summary = RunSummary(

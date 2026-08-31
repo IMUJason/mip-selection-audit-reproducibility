@@ -37,12 +37,22 @@ every paired-comparison number in the paper's Study-2 table.
   - `run_cplex_native.py` — solver-native reference baselines
   - `train_learned_v2.py` — full-action-space selector training (LOOCV depth selection)
   - `derive_portfolios.py` — deterministic wrapper-portfolio derivation
-  - `analyze_grid.py` / `analyze_anchors.py` — result aggregation, sanity
-    invariants, and anchor-mechanism analysis
+  - `analyze_grid.py` — result aggregation from the shipped run summaries
+    plus sanity invariants; `analyze_anchors.py` re-derives the anchor-event
+    analysis from per-step trace logs, which are not bundled (regenerate
+    them with the run drivers, or use the shipped
+    `results/analysis/anchor_*.csv` directly)
   - `make_paper_tables.py` — all Study-1 tables from `results/analysis/*.csv`
   - `make_extension_table.py` — replication-cohort table from the ledger and manifest
-  - `make_figures.py` — the three paper figures (budget curves, anchor
-    mechanism, replication scatter)
+  - `make_figures.py` — the four paper figures (framework roadmap, budget
+    curves, anchor mechanism, replication scatter)
+  - `regime_diagnostics.py` — Study-2 regime-conditioned deltas from the
+    released d120/h120 logs (`results/analysis/regime_diagnostics.csv`)
+  - `verify_anomalies.py` — determinism/load-sensitivity experiment driver
+  - `paired_stats.py` — Wilcoxon signed-rank tests and paired bootstrap CIs
+    complementing the descriptive comparisons (`results/analysis/paired_stats.csv`)
+  - `cpu_time_experiment.py` — CPU-time vs wall-clock robustness subset
+    (`results/cpu_time/`, ledger included)
   - `verify_study2_external.py` — asserts every row of the Study-2 paired
     table (all ten comparisons, both estimands) against the released merged
     logs; exits non-zero on any mismatch
@@ -59,9 +69,11 @@ every paired-comparison number in the paper's Study-2 table.
   - `study2/` — Study-2 (root cut selection in SCIP): per-split merged result
     logs (`results_merged.jsonl`), per-round logs (`rounds_merged.jsonl`),
     run registries, shard manifests, locked instance manifests, and the
-    route-audit files (`route_audit/`), covering the benchmark hold-out
-    (h140), the external confirmatory split (c140), the development split
-    (d120, two run directories), and the untouched external hold-out (h120)
+    route-audit files (`route_audit/`) for the three routed splits (c140,
+    d120, h120; the benchmark hold-out h140 ran no routing), covering the
+    benchmark hold-out (h140), the external confirmatory split (c140), the
+    development split (d120, two run directories), and the untouched
+    external hold-out (h120)
 - `tests/` — 19 unit tests covering the backend migration.
 
 ## Instances

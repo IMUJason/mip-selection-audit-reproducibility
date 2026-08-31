@@ -1,12 +1,13 @@
 #!/usr/bin/env python
-"""Generate the three paper figures from the released analysis artifacts.
+"""Generate the four paper figures from the analysis artifacts.
 
-Outputs (paper/figures/, vector PDF, 140 mm single-column width):
-  fig_anchor.pdf    R2 mechanism: (a) ECDF of anchor gap by policy;
-                    (b) anchor gap vs incumbent gap per improvement event.
-  fig_budget.pdf    R1: penalized mean gap vs budget by policy (log-x).
-  fig_replication.pdf  Replication cohort: exploration vs bound-driven class
-                    means with the parity band and the railway_8_1_0 split.
+Outputs (paper/figures/, vector PDF, Okabe-Ito palette, serif fonts):
+  fig_framework.pdf     paper roadmap (audit discipline -> two component
+                        studies -> cross-component synthesis + release)
+  fig_anchor.pdf        anchoring mechanism: (a) ECDF of anchor gap by policy;
+                        (b) anchor gap vs incumbent gap per improvement event
+  fig_budget.pdf        penalized mean gap vs budget by policy (log-x)
+  fig_replication.pdf   replication cohort verdicts with parity band
 
 Aesthetics: Okabe-Ito color-blind-safe palette, direct labeling over legends
 where feasible, no chartjunk; fonts sized for 1-column (140 mm) reproduction.
@@ -26,6 +27,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 ROOT = Path(__file__).resolve().parents[1]
 AN = ROOT / "results" / "analysis"
@@ -70,15 +72,166 @@ def color_for(p):
             "safeguarded_hybrid": OI["green"]}[p]
 
 
+# ---------------------------------------------------------------- fig 0 ----
+
+def fig_framework():
+    """Paper roadmap: audit discipline -> two component studies -> synthesis.
+
+    All vertical geometry is laid out in points from the top of the axes and
+    converted to axes fractions, so text lines never collide with box edges
+    and inter-box gaps leave room for visible arrows.
+    """
+    CANVAS_MM = 112
+    AXES_PT = 0.964 * (CANVAS_MM / 25.4 * 72)   # axes height in points
+
+    def Y(pt_from_top):                          # pt from axes top -> fraction
+        return 1 - pt_from_top / AXES_PT
+
+    fig, ax = plt.subplots(figsize=(W1, CANVAS_MM * MM))
+    fig.subplots_adjust(left=0.018, right=0.982, bottom=0.018, top=0.982)
+    ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
+
+    GREY_EDGE = "#8A8A8A"
+    S1_EDGE, S1_FILL, S1_TINT = OI["blue"], "#EFF5FA", "#DCE9F5"
+    S2_EDGE, S2_FILL, S2_TINT = OI["vermillion"], "#FBF1EA", "#F7E0D2"
+    SYN_FILL, REL_FILL, REL_EDGE = "#F7F7F5", "#E9F2EB", OI["green"]
+
+    def box(x, y_top, w, h_pt, fc, ec, lw=0.8):
+        ax.add_patch(FancyBboxPatch((x, Y(y_top + h_pt)), w, h_pt / AXES_PT,
+                     boxstyle="round,pad=0,rounding_size=0.008",
+                     fc=fc, ec=ec, lw=lw, zorder=1))
+
+    def arrow(x0, y0_top, y1_top, scale=5):
+        ax.add_patch(FancyArrowPatch((x0, Y(y0_top)), (x0, Y(y1_top)),
+                     arrowstyle="-|>", mutation_scale=scale, color="#777777",
+                     lw=0.9, shrinkA=0, shrinkB=0, zorder=3))
+
+    def txt(x, y_top, s, size=6.2, weight="normal", color="black",
+            ha="left", va="top"):
+        ax.text(x, Y(y_top), s, fontsize=size, fontweight=weight, color=color,
+                ha=ha, va=va, linespacing=1.30, zorder=4)
+
+    # ================= band 1: discipline (pt 0-37) ======================
+    box(0.012, 0, 0.976, 37, "#F2F2F0", GREY_EDGE)
+    txt(0.500, 2.5, "ONE AUDITING DISCIPLINE", size=7.0, weight="bold",
+        ha="center")
+    chips = [
+        "Official MIPLIB optima\nas yardsticks",
+        "Hash-locked manifests,\nfrozen splits & hold-outs",
+        "Charged accounting:\nbudgets, costs, regret",
+        "Solver-native references\nin every comparison set",
+    ]
+    cw, gap = 0.227, 0.012
+    for i, s in enumerate(chips):
+        cx = 0.028 + i * (cw + gap)
+        box(cx, 14.5, cw, 19, "white", "#BBBBBB", lw=0.6)
+        txt(cx + 0.010, 16, s, size=5.9)
+
+    # ================= band 2: study cards (pt 46-237.5) =================
+    def study_card(x0, edge, fill, tint, title, subtitle, phases, verdicts):
+        w, top, card_h = 0.480, 46, 191.5
+        box(x0, top, w, card_h, fill, edge, lw=1.0)
+        txt(x0 + 0.014, top + 3, title, size=7.6, weight="bold", color=edge)
+        txt(x0 + 0.014, top + 15, subtitle, size=5.9, color="#555555")
+        ph_h, ph_gap = 31, 9
+        tops = [top + 27.5 + k * (ph_h + ph_gap) for k in range(3)]
+        for (head, body), y0 in zip(phases, tops):
+            box(x0 + 0.012, y0, w - 0.024, ph_h, "white", "#CCCCCC", lw=0.6)
+            txt(x0 + 0.022, y0 + 2.5, head, size=6.4, weight="bold")
+            txt(x0 + 0.022, y0 + 12.5, body, size=6.0, color="#333333")
+        for i in range(2):                      # phase -> phase arrows
+            arrow(x0 + w / 2, tops[i] + ph_h + 1.8, tops[i + 1] - 1.8)
+        strip_top = tops[2] + ph_h + ph_gap     # phase 3 -> verdicts arrow
+        arrow(x0 + w / 2, tops[2] + ph_h + 1.8, strip_top - 1.8)
+        strip_h = top + card_h - strip_top - 4
+        box(x0 + 0.012, strip_top, w - 0.024, strip_h, tint, edge, lw=0.6)
+        txt(x0 + 0.022, strip_top + 2, "AUDIT VERDICTS", size=6.3,
+            weight="bold", color=edge)
+        yy = strip_top + 12
+        for v in verdicts:
+            txt(x0 + 0.022, yy, v, size=6.0, color="#222222")
+            yy += 9.0
+
+    study_card(
+        0.012, S1_EDGE, S1_FILL, S1_TINT,
+        "Study 1 \u2014 Node selection",
+        "audited branch-and-bound harness, CPLEX 22.1.1 backend",
+        [
+            ("Phase 1 \u00b7 audited policy grid",
+             "16 instances \u00d7 8 policies \u00d7 4 budgets \u00d7 3 seeds\nplus 768 solver-native reference runs"),
+            ("Phase 2 \u00b7 wrappers and learned selector",
+             "three deterministic portfolios, derived exactly;\nfrozen learned selector (cross-backend test)"),
+            ("Phase 3 \u00b7 replication and corrected selector",
+             "locked 24-instance cohort, 6 policies \u00d7 2 budgets;\nlearned-v2: full action space, LOOCV-tuned depth"),
+        ],
+        [
+            "\u2022 no policy class dominates (rail507 effect)",
+            "\u2022 anchoring split recurs in 1/22 cohort cells",
+            "\u2022 learned-v2: action space fixed, gain absent",
+        ],
+    )
+    study_card(
+        0.508, S2_EDGE, S2_FILL, S2_TINT,
+        "Study 2 \u2014 Root cut selection",
+        "RAISE-Cut regime gate as a SCIP cut-selector plugin",
+        [
+            ("Method \u00b7 regime gate",
+             "first-round probe of the dominant cut family\nselects dense efficacy vs. interaction subsets"),
+            ("Three-tier external validation",
+             "140-instance benchmark hold-out, then 140 + 120\nexternal splits, then 120 untouched hold-out"),
+            ("Estimand audit",
+             "finite-pair log-gap vs. restricted log10 primal-\ngap metric (positive dual bound; about half)"),
+        ],
+        [
+            "\u2022 development edge dies on untouched hold-out",
+            "\u2022 headline gain rides on the metric's filter",
+            "\u2022 dynamic stays the hold-out reference",
+        ],
+    )
+
+    # ============ band 3: synthesis + release (pt 246-302) ===============
+    box(0.012, 246, 0.676, 56, SYN_FILL, GREY_EDGE)
+    txt(0.026, 248.5, "Cross-component synthesis", size=7.2, weight="bold")
+    for k, row in enumerate([
+        "(1)  no policy class dominates across instance families",
+        "(2)  real conditioning, not learnable from cheap features",
+        "(3)  time-limited heuristics flip deterministic policies",
+    ]):
+        txt(0.026, 262 + k * 10, row, size=5.8)
+
+    box(0.704, 246, 0.284, 56, REL_FILL, REL_EDGE)
+    txt(0.716, 248.5, "Released audit chain", size=7.2, weight="bold",
+        color=OI["green"])
+    txt(0.716, 262,
+        "manifests \u00b7 traces \u00b7 migration\nsemantics \u00b7 scripts \u00b7 invariants",
+        size=5.6, color="#333333")
+    ax.plot([0.716, 0.976], [Y(280), Y(280)], color=REL_EDGE, lw=0.6,
+            zorder=3)
+    txt(0.716, 283, "protocol minima", size=5.8, weight="bold",
+        color=OI["green"])
+    txt(0.716, 293, "optima \u00b7 hold-outs \u00b7 charged costs",
+        size=5.6, color="#333333")
+
+    # ============ arrows between bands ==================================
+    for xa in (0.252, 0.748):
+        arrow(xa, 39, 44)
+        arrow(xa, 239, 244.5)
+
+    fig.savefig(FIG / "fig_framework.pdf")
+    plt.close(fig)
+
+
 # ---------------------------------------------------------------- fig 1 ----
 
 def fig_anchor():
     events = list(csv.DictReader(open(AN / "anchor_events.csv")))
     summary = {r["policy"]: r for r in csv.DictReader(open(AN / "anchor_summary.csv"))}
 
-    fig, axes = plt.subplots(1, 2, figsize=(W1, 66 * MM))
+    fig, axes = plt.subplots(1, 2, figsize=(W1, 70 * MM))
+    fig.subplots_adjust(top=0.85, bottom=0.13, left=0.085, right=0.969,
+                        wspace=0.335)
 
-    # (a) ECDF of anchor gap by policy (6 representative policies)
+    # (a) ECDF of anchor gap by policy
     ax = axes[0]
     show = ["best_bound", "hybrid_best_bound_depth", "safeguarded_hybrid",
             "best_estimate", "boltzmann_adaptive", "random_uniform"]
@@ -96,8 +249,9 @@ def fig_anchor():
     ax.set_xlim(-100, 12)
     ax.set_xticks([-100, -10, -1, 0, 1, 10])
     ax.set_xticklabels(["-100", "-10", "-1", "0", "1", "10"])
-    ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.22),
-               ncol=3, handlelength=1.6, labelspacing=0.25, columnspacing=1.0)
+    ax.legend(frameon=False, loc="lower right", ncol=1, handlelength=1.6,
+              labelspacing=0.35, columnspacing=1.0, fontsize=6.5,
+              handletextpad=0.5, borderaxespad=0.1)
 
     # (b) anchor gap vs incumbent gain per event (all 3,782 events)
     ax = axes[1]
@@ -115,17 +269,12 @@ def fig_anchor():
     ax.set_xticks([-100, -10, -1, 0, 1, 10])
     ax.set_xticklabels(["-100", "-10", "-1", "0", "1", "10"])
     ax.set_ylim(-8, 108)
-    rho_bb = float(summary["best_bound"]["spearman"])
-    rho_ru = float(summary["random_uniform"]["spearman"])
-    ax.text(0.03, 0.95,
-            f"Spearman \u03c1: best-bound {rho_bb:.2f}, random-uniform {rho_ru:.2f}",
-            transform=ax.transAxes, va="top", ha="left", fontsize=7,
-            bbox=dict(fc="white", ec="none", alpha=0.8, pad=1.5))
+    # Spearman coefficients are stated in the figure caption, not in the plot
     ax.legend(handles=[Line2D([], [], marker="o", ls="", color=OI["blue"], label="bound-driven"),
                        Line2D([], [], marker="o", ls="", color=OI["vermillion"], label="adaptive")],
-              frameon=False, loc="upper right")
+              frameon=False, loc="upper left", fontsize=6.5, handletextpad=0.3,
+              borderaxespad=0.2, labelspacing=0.3, bbox_to_anchor=(0.03, 0.95))
 
-    fig.tight_layout(w_pad=1.5)
     fig.savefig(FIG / "fig_anchor.pdf")
     plt.close(fig)
 
@@ -138,14 +287,14 @@ def fig_budget():
         agg[r["policy"]][int(float(r["budget"]))] = 100 * float(r["mean_gap"])
     budgets = [10, 60, 300, 900]
 
-    fig, ax = plt.subplots(figsize=(W1 * 0.72, 55 * MM))
+    fig, ax = plt.subplots(figsize=(W1 * 0.62, 55 * MM))
     for p in FIXED:
         ax.plot(budgets, [agg[p][b] for b in budgets], marker="o",
                 ms=2.8 if p in BOUND else 2.0,
                 lw=1.5 if p in BOUND else 0.9,
                 alpha=1.0 if p in BOUND else 0.8,
                 color=color_for(p), ls="-" if p in BOUND else "--")
-    # portfolios coincide with their resolved fixed policy: one collapsed dashed line
+    # portfolios coincide with their resolved fixed policy: one collapsed dotted line
     port = [statistics.fmean(agg[q][b] for q in
             ("budgeted_portfolio", "instance_aware_portfolio", "multi_feature_portfolio"))
             for b in budgets]
@@ -162,15 +311,16 @@ def fig_budget():
     ax.set_ylim(0, 62)
     # direct labels at right edge
     ax.annotate("bound-driven", xy=(900, 8.6), fontsize=7, color=OI["blue"],
-                ha="left", xytext=(930, 6.0))
+                ha="left", va="center", xytext=(935, 4.5))
     ax.annotate("adaptive", xy=(900, 47), fontsize=7, color=OI["vermillion"],
-                ha="left", xytext=(930, 55))
+                ha="left", va="center", xytext=(935, 56.0))
     ax.annotate("portfolios =\nresolved policy", xy=(900, port[-1]), fontsize=6.5,
-                color=OI["grey"], ha="left", xytext=(930, 44.5))
+                color=OI["grey"], ha="left", va="center", xytext=(935, 47.0))
     ax.annotate("learned (r27)", xy=(900, agg["learned_portfolio"][900]),
-                fontsize=6.5, color=OI["reddish"], ha="left", xytext=(930, 37.5))
-    ax.text(0.03, 0.07, "300 s: bound-driven class reaches 7.6-8.0%",
-            transform=ax.transAxes, ha="left", fontsize=7)
+                fontsize=6.5, color=OI["reddish"], ha="left", va="center",
+                xytext=(935, 36.0))
+    ax.text(0.0435, 0.055, "300 s: bound-driven class\nreaches 7.6-8.0%",
+            transform=ax.transAxes, ha="left", va="bottom", fontsize=7)
     fig.savefig(FIG / "fig_budget.pdf")
     plt.close(fig)
 
@@ -226,7 +376,7 @@ def fig_replication():
                    edgecolors="white" if mk == "*" else None, zorder=3 if mk == "*" else 2)
     r = next(p for p in pts if p[0] == "railway_8_1_0")
     ax.annotate("railway_8_1_0 (split, 8.7x)",
-                xy=(r[1] + 0.4, r[2] - 0.6), xytext=(-1, 52), fontsize=7,
+                xy=(r[1] + 0.4, r[2] - 0.6), xytext=(5.8, 38.3), fontsize=7,
                 ha="left",
                 arrowprops=dict(arrowstyle="-", lw=0.6, color=OI["vermillion"],
                                 shrinkA=2, shrinkB=1))
@@ -241,13 +391,14 @@ def fig_replication():
         Line2D([], [], ls="", marker="*", color=OI["vermillion"], ms=7, label="split (1)"),
         Line2D([], [], ls="", marker="x", color=OI["black"], label="n/f (2)"),
     ], frameon=False, loc="lower right", handletextpad=0.2)
-    ax.text(0.52, 0.965, "parity band: |Δ| ≤ 2 points", transform=ax.transAxes,
-            fontsize=7, va="top", ha="center")
+    ax.text(0.031, 0.712, "parity band: |Δ| ≤ 2 points", transform=ax.transAxes,
+            fontsize=7, va="center", ha="left")
     fig.savefig(FIG / "fig_replication.pdf")
     plt.close(fig)
 
 
 if __name__ == "__main__":
+    fig_framework()
     fig_anchor()
     fig_budget()
     fig_replication()

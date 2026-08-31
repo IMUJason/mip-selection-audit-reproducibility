@@ -137,7 +137,7 @@ def main():
         lines.append(cells + " \\\\")
     lines += [
         "\\midrule",
-        f"\\multicolumn{{5}}{{l}}{{Verdict counts (parity/expl./bound/split/n-f): {counts['parity']}/{counts['exploration']}/{counts['bound-driven']}/{counts['split']}/{counts['n/f']}}} \\\\",
+        f"\\multicolumn{{5}}{{l}}{{Verdict counts (parity/expl./bound/split/n/f): {counts['parity']}/{counts['exploration']}/{counts['bound-driven']}/{counts['split']}/{counts['n/f']}}} \\\\",
         "\\bottomrule",
         "\\end{tabular}",
         "\\end{table}",

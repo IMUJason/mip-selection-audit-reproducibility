@@ -5,7 +5,9 @@
     "source_collection": "collection",
     "size": 30868,
     "int_vars": 1600,
-    "optimum": 86678.999982707
+    "optimum": 86678.999982707,
+    "sha256": "6f49bebaed82c69e6efa2e39b4c4dfc9b2529748170b82aa160bc1acddb3b624",
+    "split": "study1_replication"
   },
   {
     "instance_name": "app2-2",
@@ -13,7 +15,9 @@
     "source_collection": "collection",
     "size": 34167,
     "int_vars": 1226,
-    "optimum": 212040.3571429
+    "optimum": 212040.3571429,
+    "sha256": "3fe21e485c34546c07f062bfbe6b61fdec9e99b14a2a5a79345f52e941dc0ae4",
+    "split": "study1_replication"
   },
   {
     "instance_name": "csched010",
@@ -21,7 +25,9 @@
     "source_collection": "collection",
     "size": 34653,
     "int_vars": 1457,
-    "optimum": 407.999999999994
+    "optimum": 407.999999999994,
+    "sha256": "790dd21fb5b0f5b2ea3bd823c4bade4ec7b675052778b79c5e1e23035a360fba",
+    "split": "study1_replication"
   },
   {
     "instance_name": "beasleyC2",
@@ -29,7 +35,9 @@
     "source_collection": "collection",
     "size": 34884,
     "int_vars": 1250,
-    "optimum": 144.0
+    "optimum": 144.0,
+    "sha256": "7fd3c1cdb9f80917103d4b498599630fa7f06ab1ab3466a87ec69d50cb563d14",
+    "split": "study1_replication"
   },
   {
     "instance_name": "beasleyC3",
@@ -37,7 +45,9 @@
     "source_collection": "benchmark",
     "size": 35144,
     "int_vars": 1250,
-    "optimum": 753.9999999999128
+    "optimum": 753.9999999999128,
+    "sha256": "37350bc46bdb84a6373e9044eb3d0d65202427fe2bcba64ed282f894699d75dd",
+    "split": "study1_replication"
   },
   {
     "instance_name": "neos2",
@@ -45,7 +55,9 @@
     "source_collection": "collection",
     "size": 35279,
     "int_vars": 1040,
-    "optimum": 454.86469703
+    "optimum": 454.86469703,
+    "sha256": "aadc413ed993afbfadd49f194ab8ac3789e9a43be9f5224052c756b3d3fd73dc",
+    "split": "study1_replication"
   },
   {
     "instance_name": "p200x1188c",
@@ -53,7 +65,9 @@
     "source_collection": "benchmark",
     "size": 36690,
     "int_vars": 1188,
-    "optimum": 15078.0
+    "optimum": 15078.0,
+    "sha256": "edf0cc0c502379119a65005b5c9a59ad242211598b1741e7fd9f9376b11bc30f",
+    "split": "study1_replication"
   },
   {
     "instance_name": "neos-4338804-snowy",
@@ -61,7 +75,9 @@
     "source_collection": "benchmark",
     "size": 37835,
     "int_vars": 1302,
-    "optimum": 1471.0
+    "optimum": 1471.0,
+    "sha256": "a8111bbb59ae6b28be2253e0532c9e628749e7c7cc7d1a1603992ec079f7eb04",
+    "split": "study1_replication"
   },
   {
     "instance_name": "50v-10",
@@ -69,7 +85,9 @@
     "source_collection": "benchmark",
     "size": 37959,
     "int_vars": 1647,
-    "optimum": 3311.1799841
+    "optimum": 3311.1799841,
+    "sha256": "9e64ce8962b8152e48b617cf7ec9e1abd8efeee8dcb317d4c06d817e5644192c",
+    "split": "study1_replication"
   },
   {
     "instance_name": "beasleyC1",
@@ -77,7 +95,9 @@
     "source_collection": "collection",
     "size": 39166,
     "int_vars": 1250,
-    "optimum": 84.99999999999999
+    "optimum": 84.99999999999999,
+    "sha256": "eeffde7ec199065354f973da9e788e2ec7e5baddc369fde880e986a654354d02",
+    "split": "study1_replication"
   },
   {
     "instance_name": "mc7",
@@ -85,7 +105,9 @@
     "source_collection": "collection",
     "size": 39555,
     "int_vars": 1520,
-    "optimum": 3417.0
+    "optimum": 3417.0,
+    "sha256": "c37aa39d18e28419b39a61a1bc1a104ca00dd3ca92d84821f860fa7ec9e24e0f",
+    "split": "study1_replication"
   },
   {
     "instance_name": "mc8",
@@ -93,7 +115,9 @@
     "source_collection": "collection",
     "size": 39753,
     "int_vars": 1520,
-    "optimum": 1566.0
+    "optimum": 1566.0,
+    "sha256": "3fce01cf3f99cc14c3b18603678a764ce143757c24d88058bc6277d2d4182520",
+    "split": "study1_replication"
   },
   {
     "instance_name": "mc11",
@@ -101,7 +125,9 @@
     "source_collection": "benchmark",
     "size": 40584,
     "int_vars": 1520,
-    "optimum": 11688.99999999966
+    "optimum": 11688.99999999966,
+    "sha256": "55f4d9c9d2022cffeb3e07cd7398753f5aab720f16fa49ab17223375bab83874",
+    "split": "study1_replication"
   },
   {
     "instance_name": "gmu-35-40",
@@ -109,7 +135,9 @@
     "source_collection": "benchmark",
     "size": 42251,
     "int_vars": 1200,
-    "optimum": -2406733.3688
+    "optimum": -2406733.3688,
+    "sha256": "0c91e71117164becea8109a414127a2223be82215498f243767a7f5f51b1f11d",
+    "split": "study1_replication"
   },
   {
     "instance_name": "haprp",
@@ -117,7 +145,9 @@
     "source_collection": "collection",
     "size": 42751,
     "int_vars": 1828,
-    "optimum": 3673280.6808
+    "optimum": 3673280.6808,
+    "sha256": "3d879fc883861aaae72a90965ff5bc1918ce7244e1b244fe1d7c1c64def0cd47",
+    "split": "study1_replication"
   },
   {
     "instance_name": "cvs08r139-94",
@@ -125,7 +155,9 @@
     "source_collection": "collection",
     "size": 44265,
     "int_vars": 1864,
-    "optimum": -116.0
+    "optimum": -116.0,
+    "sha256": "bbf826873af0614e32e74a7b489f1e0ecbd36ee086e08cf97bb264ec751de162",
+    "split": "study1_replication"
   },
   {
     "instance_name": "neos-3426085-ticino",
@@ -133,7 +165,9 @@
     "source_collection": "collection",
     "size": 45906,
     "int_vars": 4688,
-    "optimum": 225.0
+    "optimum": 225.0,
+    "sha256": "0e2ed70533d69aad9d2796f7e7bb7cb00b2732ddcffa8baedf2ab9e69f339a1e",
+    "split": "study1_replication"
   },
   {
     "instance_name": "mod010",
@@ -141,7 +175,9 @@
     "source_collection": "collection",
     "size": 47465,
     "int_vars": 2655,
-    "optimum": 6548.0
+    "optimum": 6548.0,
+    "sha256": "e41ed01bfa1a3180e8180e35617319564516bc932296d537358933b87483891e",
+    "split": "study1_replication"
   },
   {
     "instance_name": "10teams",
@@ -149,7 +185,9 @@
     "source_collection": "collection",
     "size": 47772,
     "int_vars": 1800,
-    "optimum": 923.9999999999997
+    "optimum": 923.9999999999997,
+    "sha256": "5f73e7922fa51cfb3a15243223a20458dfc258f684b10cd1be630356fd2ef31e",
+    "split": "study1_replication"
   },
   {
     "instance_name": "lotsize",
@@ -157,7 +195,9 @@
     "source_collection": "benchmark",
     "size": 48803,
     "int_vars": 1195,
-    "optimum": 1480195.0
+    "optimum": 1480195.0,
+    "sha256": "14702c1793474b78a30b91512a12917790ba860f7abe765b01b296fb86835902",
+    "split": "study1_replication"
   },
   {
     "instance_name": "aflow40b",
@@ -165,7 +205,9 @@
     "source_collection": "collection",
     "size": 52827,
     "int_vars": 1364,
-    "optimum": 1168.0
+    "optimum": 1168.0,
+    "sha256": "a02d2c9222b3de7c7c7b3416694b1cfea6646363a61fbd61b39c8ab64dbb48c3",
+    "split": "study1_replication"
   },
   {
     "instance_name": "neos-1112787",
@@ -173,7 +215,9 @@
     "source_collection": "collection",
     "size": 52890,
     "int_vars": 1640,
-    "optimum": 564772773667.0
+    "optimum": 564772773667.0,
+    "sha256": "af154b56db94e493176d60b3e9cea2dd0d5bc8d001879fb4ecc99bb993b89037",
+    "split": "study1_replication"
   },
   {
     "instance_name": "cvs16r70-62",
@@ -181,7 +225,9 @@
     "source_collection": "collection",
     "size": 53431,
     "int_vars": 2112,
-    "optimum": -42.0
+    "optimum": -42.0,
+    "sha256": "55eb3a9531c988a742cd9a3756c11eeedf6ffddbd8809f59189b47f524693aa7",
+    "split": "study1_replication"
   },
   {
     "instance_name": "railway_8_1_0",
@@ -189,6 +235,8 @@
     "source_collection": "collection",
     "size": 54887,
     "int_vars": 1177,
-    "optimum": 400.0
+    "optimum": 400.0,
+    "sha256": "de90505563cd5dc5bf1572655546618713fcfa356e8680c77b7fe8ca7acb1dbd",
+    "split": "study1_replication"
   }
 ]

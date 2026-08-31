@@ -1,7 +1,7 @@
 {
   "run_id": "p45_irp_learned_v2_b300_s2_1788053570",
   "status": "node_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/irp.mps.gz",
+  "instance_path": "data/instances/irp.mps.gz",
   "policy": "learned_portfolio",
   "resolved_policy": "best_bound",
   "policy_resolution_reason": "learned_portfolio_root_fractional_ratio=0.00083682<0.159592 -> policy=best_bound",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 42.777963916014414,
   "beta_initial": 1.0,
   "beta_final": 1.0,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/results/raw/p45_irp_learned_v2_b300_s2_1788053570_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_irp_learned_v2_b300_s2_1788053570_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_irp_learned_v2_b300_s2_1788053570_manifest.json"
+  "summary_path": "results/grid/results/raw/p45_irp_learned_v2_b300_s2_1788053570_summary.json",
+  "trace_path": "results/grid/logs/runs/p45_irp_learned_v2_b300_s2_1788053570_trace.jsonl",
+  "manifest_path": "results/grid/logs/runs/p45_irp_learned_v2_b300_s2_1788053570_manifest.json"
 }

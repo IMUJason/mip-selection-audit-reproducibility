@@ -1,7 +1,7 @@
 {
   "run_id": "p45x_neos-3426085-ticino_best_estimate_b60_s0_1788048406",
   "status": "node_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/neos-3426085-ticino.mps.gz",
+  "instance_path": "data/instances/neos-3426085-ticino.mps.gz",
   "policy": "best_estimate",
   "resolved_policy": "best_estimate",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 38.298626915959176,
   "beta_initial": 1.0,
   "beta_final": 1.0,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/results/raw/p45x_neos-3426085-ticino_best_estimate_b60_s0_1788048406_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_neos-3426085-ticino_best_estimate_b60_s0_1788048406_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid_ext/logs/runs/p45x_neos-3426085-ticino_best_estimate_b60_s0_1788048406_manifest.json"
+  "summary_path": "results/grid_ext/results/raw/p45x_neos-3426085-ticino_best_estimate_b60_s0_1788048406_summary.json",
+  "trace_path": "results/grid_ext/logs/runs/p45x_neos-3426085-ticino_best_estimate_b60_s0_1788048406_trace.jsonl",
+  "manifest_path": "results/grid_ext/logs/runs/p45x_neos-3426085-ticino_best_estimate_b60_s0_1788048406_manifest.json"
 }

@@ -1,7 +1,7 @@
 {
   "run_id": "p45_mcsched_depth_first_b10_s0_1788029622",
   "status": "time_limit",
-  "instance_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/data/instances/mcsched.mps.gz",
+  "instance_path": "data/instances/mcsched.mps.gz",
   "policy": "depth_first",
   "resolved_policy": "depth_first",
   "policy_resolution_reason": "direct_policy",
@@ -42,7 +42,7 @@
   "elapsed_seconds": 10.010332709003706,
   "beta_initial": 1.0,
   "beta_final": 1.0,
-  "summary_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/results/raw/p45_mcsched_depth_first_b10_s0_1788029622_summary.json",
-  "trace_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_mcsched_depth_first_b10_s0_1788029622_trace.jsonl",
-  "manifest_path": "/Users/cjx-ms/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/plan4and5/results/grid/logs/runs/p45_mcsched_depth_first_b10_s0_1788029622_manifest.json"
+  "summary_path": "results/grid/results/raw/p45_mcsched_depth_first_b10_s0_1788029622_summary.json",
+  "trace_path": "results/grid/logs/runs/p45_mcsched_depth_first_b10_s0_1788029622_trace.jsonl",
+  "manifest_path": "results/grid/logs/runs/p45_mcsched_depth_first_b10_s0_1788029622_manifest.json"
 }

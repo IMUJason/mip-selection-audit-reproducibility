@@ -784,15 +784,15 @@
     ]
   },
   "training_artifacts": {
-    "feature_path": "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/work/root_features_round27_transport_all_lp_proxy.json",
+    "feature_path": "Plan 4/work/root_features_round27_transport_all_lp_proxy.json",
     "summary_paths": [
-      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round8_postfix_baseline_60s_summary.json",
-      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round25_train_extension_60s_summary.json",
-      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round21_holdout_direct_60s_summary.json",
-      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round11_positive_300s_summary.json",
-      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_round25_train_extension_300s_summary.json",
-      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_adjacent_extension_60s_summary.json",
-      "/Users/cjx-mbp/Documents/我的坚果云/科研/论文/2026_Quantum_Solver/Plan 4/results/processed/transport_adjacent_extension_300s_summary.json"
+      "Plan 4/results/processed/transport_round8_postfix_baseline_60s_summary.json",
+      "Plan 4/results/processed/transport_round25_train_extension_60s_summary.json",
+      "Plan 4/results/processed/transport_round21_holdout_direct_60s_summary.json",
+      "Plan 4/results/processed/transport_round11_positive_300s_summary.json",
+      "Plan 4/results/processed/transport_round25_train_extension_300s_summary.json",
+      "Plan 4/results/processed/transport_adjacent_extension_60s_summary.json",
+      "Plan 4/results/processed/transport_adjacent_extension_300s_summary.json"
     ],
     "candidate_policies": [
       "best_estimate",
