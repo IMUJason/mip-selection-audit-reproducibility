@@ -31,9 +31,7 @@ MANIFEST = ROOT / "data" / "extension_manifest.json"
 OUT = ROOT / "paper" / "tables" / "extension.tex"
 
 BOUND_POLICIES = ["best_bound", "depth_first", "hybrid_best_bound_depth"]
-EXPLORATION_POLICIES = ["greedy_score", "random_uniform", "best_estimate",
-                        "boltzmann_adaptive", "safeguarded_hybrid"][:3]  # see note below
-# NOTE: the extension grid ran {best_bound, depth_first, hybrid, best_estimate,
+# The extension grid ran {best_bound, depth_first, hybrid, best_estimate,
 # boltzmann_adaptive, random_uniform}; exploration class = the three non-bound ones.
 EXPLORATION_POLICIES = ["best_estimate", "boltzmann_adaptive", "random_uniform"]
 

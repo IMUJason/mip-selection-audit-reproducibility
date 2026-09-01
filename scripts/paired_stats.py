@@ -30,7 +30,7 @@ from pathlib import Path
 from scipy.stats import wilcoxon
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from verify_study2_external import C140, H120, load, paired, restricted  # noqa: E402
+from verify_study2_external import C140, H120, load  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "results" / "analysis" / "paired_stats.csv"
@@ -106,12 +106,12 @@ def log_gap(p, d):
 
 
 def study2_pairs(split_path, left, right):
-    """Official metric implementations from verify_study2_external.py."""
+    """Per-instance delta lists under the two official metrics of
+    verify_study2_external.py (finite-pair log1p and restricted log10),
+    rebuilt here so the same deltas feed the Wilcoxon test and the bootstrap.
+    """
     d = load(split_path)
-    fin = paired(d, left, right)
-    res = restricted(d, right)
     fin_deltas, res_deltas = [], []
-    # rebuild raw delta lists for Wilcoxon/bootstrap
     A, B = d[left], d[right]
     for i in sorted(set(A) & set(B)):
         a, b = A[i], B[i]
@@ -169,7 +169,7 @@ def main():
         for metric, deltas in zip(
                 ("finite", "restricted"), study2_pairs(split_path, left, right)):
             lo, hi = boot_ci(deltas)
-            rows.append([f"S2-{str(split_path)[-20:-13]}",
+            rows.append([f"S2-{split_path.parent.name}",
                          f"{left} vs {right} ({metric})",
                          len(deltas),
                          f"{statistics.fmean(deltas):+.4f}",

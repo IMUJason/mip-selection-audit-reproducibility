@@ -2,9 +2,9 @@ comparison,detail,n,mean_delta,wilcoxon_p,boot95_ci
 S1-repl,"BD vs EX class means, 22 cells",22,-0.20,0.248,
 LV2-hold,learned-v2 vs best-bound,21,+1.24,0.469,
 S1-orig,BD vs EX class means,27,-24.92,0.004,
-S2-results,raise_cut vs default (finite),74,-0.0114,0.319,"[-0.0367, +0.0133]"
-S2-results,raise_cut vs default (restricted),75,-0.0496,0.411,"[-0.1792, +0.0557]"
-S2-results,raise_cut vs default (finite),60,+0.0018,0.294,"[-0.0346, +0.0358]"
-S2-results,raise_cut vs default (restricted),64,-0.0383,0.258,"[-0.1673, +0.0386]"
-S2-results,raise_cut vs scip_dynamic (finite),58,+0.1043,0.143,"[-0.0100, +0.3092]"
-S2-results,raise_cut vs scip_dynamic (restricted),64,-0.0429,0.906,"[-0.1737, +0.0362]"
+S2-c140_confirmatory,raise_cut vs default (finite),74,-0.0114,0.319,"[-0.0367, +0.0133]"
+S2-c140_confirmatory,raise_cut vs default (restricted),75,-0.0496,0.411,"[-0.1792, +0.0557]"
+S2-h120_holdout,raise_cut vs default (finite),60,+0.0018,0.294,"[-0.0346, +0.0358]"
+S2-h120_holdout,raise_cut vs default (restricted),64,-0.0383,0.258,"[-0.1673, +0.0386]"
+S2-h120_holdout,raise_cut vs scip_dynamic (finite),58,+0.1043,0.143,"[-0.0100, +0.3092]"
+S2-h120_holdout,raise_cut vs scip_dynamic (restricted),64,-0.0429,0.906,"[-0.1737, +0.0362]"
